@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>LOTRO ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://github.com/Lotro/lotro.github.io","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://github.com/Lotro/lotro.github.io","name":"LOTRO ontology", "headline":"An ontology for describing Lord of the Rings - The Fellowship of the Rings", "datePublished":"30/08/2019", "version":"v1.0.0", "license":"http://creativecommons.org/licenses/by/2.0/", "author":[{"@type":"Person","name":"Davide Apolloni","url":"https://www.linkedin.com/in/davide-apolloni-568602159/"},{"@type":"Person","name":" Alessandra Auddino","url":" https://www.linkedin.com/in/alessandra-auddino/"},{"@type":"Person","name":" Hizkiel Mitiku","url":" https://www.linkedin.com/in/hizkiel-alemayehu-97306010b/"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+ $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ };    $(function(){
+      $("#abstract").load("sections/abstract-en.html"); 
+      $("#introduction").load("sections/introduction-en.html"); 
+      $("#overview").load("sections/overview-en.html"); 
+      $("#description").load("sections/description-en.html"); 
+      $("#references").load("sections/references-en.html"); 
+      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
+    });
+    </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>LOTRO ontology</h1>
+<h2>Release  30/08/2019</h2>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="https://github.com/Lotro/lotro.github.io">https://github.com/Lotro/lotro.github.io</a></dd>
+<dt>Revision:</dt>
+<dd>v1.0.0</dd>
+<dt>Authors:</dt>
+<dd><a href="https://www.linkedin.com/in/davide-apolloni-568602159/">Davide Apolloni</a>, (<a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">DHDK - Università degli Studi di Bologna</a>)</dd><dd><a href=" https://www.linkedin.com/in/alessandra-auddino/"> Alessandra Auddino</a></dd><dd><a href=" https://www.linkedin.com/in/hizkiel-alemayehu-97306010b/"> Hizkiel Mitiku</a></dd>
+
+<dt>Publisher:</dt>
+<dd><a href="https://www.linkedin.com/in/davide-apolloni-568602159/; https://www.linkedin.com/in/alessandra-auddino/; https://www.linkedin.com/in/hizkiel-alemayehu-97306010b/">Davide Apolloni; Alessandra Auddino; Hizkiel Mitiku</a>, (<a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">DHDK - Università degli Studi di Bologna</a>)</dd>
+<dt>Imported Ontologies:</dt>
+<dd><a href="http://xmlns.com/foaf/spec/">foaf</a></dd><dd><a href=" https://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.html"> core</a></dd><dd><a href=" http://www.w3.org/2002/07/owl"> owl</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://creativecommons.org/licenses/by/2.0/" target="_blank"><img src="https://img.shields.io/badge/License-CC_BY-blue.svg" alt="http://creativecommons.org/licenses/by/2.0/" /></a>
+<a href="http://creativecommons.org/licenses/by/2.0/" rel="license" target="_blank">
+<img src="https://i.creativecommons.org/l/by/2.0/88x31.png" style="border-width:0" alt="License" />
+</a>
+<br/></dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>LOTRO Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"></div>
+<div id="toc"></div>     <div id="introduction"></div>
+     <div id="overview"></div>
+     <div id="description"></div>
+     <div id="crossref"></div>
+     <div id="references"></div>
+<html>
+<div id="acknowledgements">
+<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+</html>
+
+</div>
+</body>
+</html>

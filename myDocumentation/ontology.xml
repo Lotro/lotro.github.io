@@ -1,0 +1,1490 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#"
+     xml:base="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:LOTROntology="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#">
+    <owl:Ontology rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/Location">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/family_name -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/family_name">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt">
+        <owl:inverseOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy"/>
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#cousinOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#cousinOf">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#inhabitant -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#inhabitant">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#nephewOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#nephewOf">
+        <owl:inverseOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#uncleOf"/>
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks">
+        <owl:inverseOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy"/>
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#uncleOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#uncleOf">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/age">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/member -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/member">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology -->
+
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs -->
+
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means -->
+
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth -->
+
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath -->
+
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath">
+        <rdfs:domain rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
+        <rdfs:comment xml:lang="en">Axe is a kind of weapon favoured by the Dwarves and few Elves.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe"/>
+        <rdfs:label xml:lang="en">Axe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
+        <rdfs:comment xml:lang="en">Bow is a long-range weapon usually, but not exclusively, made of wood that shoots arrows.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow"/>
+        <rdfs:label xml:lang="en">Bow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character">
+        <rdfs:comment xml:lang="en">Fictional characters, divided into various races, created by J. R.R. Tolkien.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:label xml:lang="en">Character</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">http://dbpedia.org/page/Character</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:comment xml:lang="en">One of the races of fictional characters populating Middle Earth.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf"/>
+        <rdfs:label xml:lang="en">Dwarf</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Dwarf_(Middle-earth)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:comment xml:lang="en">One of the races of fictional characters populating Middle Earth.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf"/>
+        <rdfs:label xml:lang="en">Elf</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">http://dbpedia.org/page/Elf_(Middle-earth)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit"/>
+        <rdfs:comment xml:lang="en">The least common of Hobbits.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide"/>
+        <rdfs:label xml:lang="en">Fallohide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit"/>
+        <rdfs:comment xml:lang="en">The most common type of Hobbit.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot"/>
+        <rdfs:label xml:lang="en">Harfoot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:comment xml:lang="en">One of the races of fictional characters populating Middle Earth.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit"/>
+        <rdfs:label xml:lang="en">Hobbit</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Hobbit</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:comment xml:lang="en">One of the races of fictional characters populating Middle Earth.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human"/>
+        <rdfs:label xml:lang="en">Human</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">http://dbpedia.org/page/Man_(Middle-earth)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language">
+        <rdfs:comment xml:lang="en">Many different languages are spoken by the characters living in Middle-Earth.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+        <rdfs:comment xml:lang="en">One of the races of fictional characters populating Middle Earth.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar"/>
+        <rdfs:label xml:lang="en">Maiar</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">http://dbpedia.org/page/Maia_(Middle-earth)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name">
+        <rdfs:comment xml:lang="en">Names, in Tolkien&apos;s universe, are very important. As a matter of fact, the writer carefully thought about the meaning and the etimology of the names he created.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <rdfs:label xml:lang="en">Name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf"/>
+        <rdfs:comment xml:lang="en">Subclass of Elf. Noldor are High Elves of the Second Clan who migrated to Valinor and lived in Eldamar.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor"/>
+        <rdfs:label xml:lang="en">Noldor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place">
+        <rdfs:comment xml:lang="en">In Tolkien&apos;s universe, many places are created and taken into consideration.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
+        <rdfs:comment xml:lang="en">In Middle-Earth, rings are artefacts which possess magical powers.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring"/>
+        <rdfs:label xml:lang="en">Ring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
+        <rdfs:comment>Usually used by the Maiars accompained by a sword</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff"/>
+        <rdfs:label>Staff</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit"/>
+        <rdfs:comment xml:lang="en">A type of Hobbit who lived in swampy areas.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor"/>
+        <rdfs:label xml:lang="en">Stoor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf"/>
+        <rdfs:comment xml:lang="en">Sublcass of Elf. Teleri were the third of the Elf clans who came to Aman.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri"/>
+        <rdfs:label xml:lang="en">Teleri</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar">
+        <rdfs:subClassOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf"/>
+        <rdfs:comment xml:lang="en">Subclass of Elf. They are the fairest and most noble of the High Elves.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar"/>
+        <rdfs:label xml:lang="en">Vanyar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon -->
+
+
+    <owl:Class rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon">
+        <rdfs:comment xml:lang="en">Characters are provided with a weapon which they use to perform actions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
+        <rdfs:label xml:lang="en">Weapon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Andúril -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Andúril">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Andúril_name"/>
+        <rdfs:comment>Andúril was the name for the sword Narsil after its reforging in Third Age 3018 for Aragorn, the heir of Isildur.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Andúril_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Andúril_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>andúnë + ril (Quenya)</hasEtimology>
+        <isWrittenAs>Andúril</isWrittenAs>
+        <means>Flame of the West</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn_name"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"/>
+        <owl:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Aragorn</owl:sameAs>
+        <foaf:member>The Fellowship of the Ring</foaf:member>
+        <core:dateOfBirth>1 March T.A. 2931</core:dateOfBirth>
+        <core:dateOfDeath>Fo.A. 120</core:dateOfDeath>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Aran + gorn (Sindarin)</hasEtimology>
+        <isWrittenAs>Aragorn</isWrittenAs>
+        <means>Revered King</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Bagging (Northern English)</hasEtimology>
+        <hasEtimology>Baggins</hasEtimology>
+        <means>eating between meals, the end of a bag</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide"/>
+        <terms:Location rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"/>
+        <foaf:family_name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name"/>
+        <adopt rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"/>
+        <uncleOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <core:dateOfBirth>22 September T.A. 2890</core:dateOfBirth>
+        <core:dateOfDeath>Unknown</core:dateOfDeath>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>bil + bó/bá (Anglosaxon)</hasEtimology>
+        <isWrittenAs>Bilbo</isWrittenAs>
+        <means>cut-and-thrust sword</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <spokenIn rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor"/>
+        <rdfs:comment>The Black Speech was created by Sauron during the Dark Years to be the sole language of all the servants of Mordor, replacing the many different varieties of Orkish and other languages used by his servants.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human"/>
+        <terms:Location rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir_name"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"/>
+        <foaf:member>The Fellowship of the Ring</foaf:member>
+        <core:dateOfBirth>T.A. 2978</core:dateOfBirth>
+        <core:dateOfDeath>February 26, T.A. 3019</core:dateOfDeath>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Bôr + Mírë (Sindarin + Quenya)</hasEtimology>
+        <isWrittenAs>Boromir</isWrittenAs>
+        <means>Trusty man + precious thing</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_Lórien -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_Lórien">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Brandybuck_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Brandybuck_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Brandagamba (Westron)</hasEtimology>
+        <isWrittenAs>Brandybuck</isWrittenAs>
+        <means>Border-water + male deer or ram</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Broad_bladed_axe -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Broad_bladed_axe">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe"/>
+        <rdfs:comment>A broadaxe is a large-(broad) headed axe.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dagger_Of_Westernesse -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dagger_Of_Westernesse">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword"/>
+        <rdfs:comment>The Daggers of Westernesse were weapons that Tom Bombadil brought out of the mound in which Frodo Baggins and his friends had been imprisoned. Each dagger had a long, leaf-shaped blade, damasked with serpent-forms in red and gold. They had black sheaths of an unknown metal, light and strong, adorned with fiery stones.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor_name"/>
+        <inhabitant rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <rdfs:comment>Erebor was a mountain in the north-east of Rhovanion. It was the source of the river Running, and a major Dwarven stronghold, the Kingdom under the Mountain at the end of the Third Age and well into the Fourth.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Ereb + or(od) (Sindarin)</hasEtimology>
+        <isWrittenAs>Erebor</isWrittenAs>
+        <means>Lonely Mountain</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide"/>
+        <terms:Location rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"/>
+        <foaf:family_name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name"/>
+        <adoptedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring"/>
+        <nephewOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"/>
+        <owl:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Frodo_Baggins</owl:sameAs>
+        <foaf:member>The Fellowship of the Ring</foaf:member>
+        <core:dateOfBirth>22 September, T.A. 2968</core:dateOfBirth>
+        <core:dateOfDeath>Unknown</core:dateOfDeath>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Frod (Anglosaxon)</hasEtimology>
+        <isWrittenAs>Frodo</isWrittenAs>
+        <means>Wise by experience</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Gamgee (Contemporary English)</hasEtimology>
+        <isWrittenAs>Gamgee</isWrittenAs>
+        <means>Cotton wool</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"/>
+        <owl:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Gandalf</owl:sameAs>
+        <foaf:member>The Fellowship of the Ring</foaf:member>
+        <core:dateOfBirth>Unknown</core:dateOfBirth>
+        <core:dateOfDeath>Unknown</core:dateOfDeath>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>gandr + álfr (Old Norse)</hasEtimology>
+        <isWrittenAs>Gandalf</isWrittenAs>
+        <means>Wand elf</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli_name"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Broad_bladed_axe"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"/>
+        <foaf:member>The Fellowship of the Ring</foaf:member>
+        <core:dateOfBirth>T.A. 2879</core:dateOfBirth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Gimm (Old Norse)</hasEtimology>
+        <isWrittenAs>Gimli</isWrittenAs>
+        <means>Fire</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name"/>
+        <rdfs:comment>Glamdring was a sword, said to have belonged to Turgon, but best known as the weapon of Gandalf during the War of the Ring. It was known in Westron as the Foe-hammer, and Orcs knew it as Beater.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>glam + dring (Westron)</hasEtimology>
+        <isWrittenAs>Glamdring</isWrittenAs>
+        <means>foe-hammer</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor_name"/>
+        <inhabitant rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"/>
+        <rdfs:comment>Gondor was the South Kingdom of the Númenóreans in Middle-earth, established soon after the downfall of Númenor by Isildur and his brother Anárion.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>gond + (n)dor (Sindarin)</hasEtimology>
+        <isWrittenAs>Gondor</isWrittenAs>
+        <means>Stone-land</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul_name"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <spokenIn rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor"/>
+        <rdfs:comment>Khuzdul, or Dwarvish, was the secret language of the Dwarves.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Khuzd (Khuzdul)</hasEtimology>
+        <isWrittenAs>Khuzdul</isWrittenAs>
+        <means>Dwarves</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri"/>
+        <terms:Location rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Woodland_Realm"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas_name"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_Lórien"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"/>
+        <foaf:member>The Fellowship of the Ring</foaf:member>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Laeg + golas (Sindarin)</hasEtimology>
+        <isWrittenAs>Legolas</isWrittenAs>
+        <means>Green foliage</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide"/>
+        <terms:Location rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"/>
+        <foaf:family_name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Brandybuck_name"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc_name"/>
+        <cousinOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dagger_Of_Westernesse"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"/>
+        <foaf:member>The Fellowship of the Ring</foaf:member>
+        <core:dateOfBirth>Early S.R. 1382</core:dateOfBirth>
+        <core:dateOfDeath>After S.R. 1484</core:dateOfDeath>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Mawr + Udd (Welsh)</hasEtimology>
+        <isWrittenAs>Meriadoc</isWrittenAs>
+        <means>Great Lord</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name"/>
+        <inhabitant rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <rdfs:comment>Mordor was a land in the south-east of the Westlands east of Gondor. During most of the Second and Third Ages it was ruled by Sauron and it was his dwelling and base from which he attempted to conquer Middle-earth.
+Mordor was surrounded by three enormous mountain ridges from the North, from the West and from the South, protecting it from an unexpected invasion by any of the Free peoples.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>mor + dôr (Sindarin)</hasEtimology>
+        <isWrittenAs>Mordor</isWrittenAs>
+        <means>The Black Land</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name"/>
+        <rdfs:comment>Narya was one of the Rings of Power, specifically one of the &quot;Three Rings for the Elven Kings under the sky&quot;.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Fiery red</hasEtimology>
+        <hasEtimology>narwa + ya (Quenya)</hasEtimology>
+        <isWrittenAs>Narya</isWrittenAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide"/>
+        <terms:Location rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"/>
+        <foaf:family_name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Took_name"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin_name"/>
+        <cousinOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dagger_Of_Westernesse"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"/>
+        <foaf:member>The Fellowship of the Ring</foaf:member>
+        <core:dateOfBirth>Spring T.A. 2990</core:dateOfBirth>
+        <core:dateOfDeath>After Fo.A. 63</core:dateOfDeath>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Pelegrinus (Latin)</hasEtimology>
+        <isWrittenAs>Peregrin</isWrittenAs>
+        <means>Wanderer</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya_name"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <spokenIn rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Woodland_Realm"/>
+        <rdfs:comment>Quenya was one of the languages spoken by the Elves. It was the tongue that developed among those non-Telerin Elves who reached Aman (the High Elves) from an earlier language called Common Eldarin.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Kwene (primitive Quendian)</hasEtimology>
+        <isWrittenAs>Quenya</isWrittenAs>
+        <means>Person</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot"/>
+        <terms:Location rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"/>
+        <foaf:family_name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <friendOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron"/>
+        <owl:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Samwise_Gamgee</owl:sameAs>
+        <foaf:member>The Fellowship of the Ring</foaf:member>
+        <core:dateOfBirth>6 April T.A. 2980</core:dateOfBirth>
+        <core:dateOfDeath>Unknown</core:dateOfDeath>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>samwís (Anglosaxon)</hasEtimology>
+        <isWrittenAs>Samwise</isWrittenAs>
+        <means>Simple minded</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar"/>
+        <terms:Location rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <enemyOf rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <hasWeapon rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring"/>
+        <speaks rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech"/>
+        <core:dateOfBirth>Unknown</core:dateOfBirth>
+        <core:dateOfDeath>25 March T.A. 3019</core:dateOfDeath>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>saura (Sindarin)</hasEtimology>
+        <isWrittenAs>Sauron</isWrittenAs>
+        <means>Foul, putrid, evil-smelling</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <rdfs:comment>Sindarin was the Elvish language most commonly spoken in Middle-earth in the Third Age.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Sindar (Quenya)</hasEtimology>
+        <isWrittenAs>Sindarin</isWrittenAs>
+        <means>Grey Elivsh language</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name"/>
+        <rdfs:comment>Sting was an Elvish knife that was probably made in Gondolin in the First Age. Its maker and original bearer are unknown.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>stincg, steng (Anglosaxon)</hasEtimology>
+        <isWrittenAs>Sting</isWrittenAs>
+        <means>Act of stinging, puncture, thrust</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring"/>
+        <rdfs:comment>The One Ring was an ancient artefact created by the Dark Lord Sauron in the Second Age for the purpose of ruling over the Free peoples of Middle-earth, mainly the Elves.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name"/>
+        <inhabitant rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"/>
+        <inhabitant rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <inhabitant rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc"/>
+        <inhabitant rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin"/>
+        <inhabitant rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <rdfs:comment>The Shire was a region in Eriador inhabited by Hobbits.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>scira (Old High German)</hasEtimology>
+        <isWrittenAs>The Shire</isWrittenAs>
+        <means>District, province, country</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Took_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Took_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Tûk (Westron)</hasEtimology>
+        <isWrittenAs>Took</isWrittenAs>
+        <means>Daring</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+        <foaf:name rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf"/>
+        <spokenBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise"/>
+        <spokenIn rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire"/>
+        <rdfs:comment>The Westron was the language of the Dúnedain of Middle-earth. By the end of the Third Age it was more or less a universal language spoken throughout the Westlands.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+        <hasEtimology>Adûnaic Adûn (Númenórean)</hasEtimology>
+        <isWrittenAs>Westron</isWrittenAs>
+        <means>Language of the West</means>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff"/>
+        <rdfs:comment xml:lang="en">A Wizard Staff is the primary tool, power conduit, and sometimes weapon of Wizards, which might have also served as a symbol of their power or rank.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff"/>
+        <rdfs:label xml:lang="en">Staff</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Woodland_Realm -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Woodland_Realm">
+        <rdf:type rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+        <inhabitant rdf:resource="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas"/>
+        <rdfs:comment>The Woodland Realm was a kingdom of Silvan Elves in Mirkwood, from the Second Age onwards.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword">
+        <rdfs:comment xml:lang="en">In Middle-Earth, swords are forged out different materials and they might have secret hidden powers according to the hand that is using them.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sword</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri"/>
+            <rdf:Description rdf:about="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

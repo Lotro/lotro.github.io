@@ -1,0 +1,10 @@
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix lotro: <https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology>.
+@prefix foaf: <http://xmlns.com/foaf/spec/>.
+
+<https://github.com/Lotro/lotro.github.io/edit/master/Bilbo>
+foaf:age 99;
+dcterms:Location <https://github.com/Lotro/lotro.github.io/blob/master/Bag_End>;
+lotro:adopted <https://github.com/Lotro/lotro.github.io/edit/master/Frodo>.
+
+    

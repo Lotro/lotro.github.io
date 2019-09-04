@@ -1,0 +1,454 @@
+@import url("demo.css");
+
+.demo-1 body {
+	background: #f0f0f0 url(../images/cream_dust.jpg);
+}
+
+.demo-2 body {
+	background: #fff;
+}
+
+.demo-3 body {
+	background: #333 url(../images/black_denim.jpg);
+}
+
+.demo-4 body {
+	background: #f0f0f0 url(../images/wood_pattern.jpg);
+}
+
+.demo-5 body {
+	background: #f0f0f0 url(../images/bgnoise_lg.jpg);
+}
+
+.demo-6 body {
+	background: #f0f0f0 url(../images/cream_dust.jpg);
+}
+
+.main {
+	width: 100%;
+	max-width: 960px;
+	padding: 40px;
+	text-shadow: 0 2px 0 rgba(255,255,255,0.7);
+}
+
+.main p {
+	font-size: 18px;
+	line-height: 1.4;
+	text-align: justify;
+}
+
+.main ul {
+	font-size: 18px;
+	line-height: 1.4;
+	text-align: justify;
+}
+
+#toc_container {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #6cf;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+
+
+.responsive {
+  width: 80%;
+  height: auto;
+  border-radius: 13%;
+  opacity: 0.8;
+   padding:1px;
+   border:5px solid #6cf;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.demo-3 .main tr { 
+	color: #ccc;
+	text-shadow: none;
+	font-size: 18px;
+}
+
+.demo-3 .main table { 
+	color: #ccc;
+	text-shadow: none;
+	font-size: 18px;
+}
+
+
+.demo-3 .main p { 
+	color: #ccc;
+	text-shadow: none;
+}
+
+.demo-4 .main p { 
+	color: #6b5344;
+	color: rgba(107,83,68,0.9);
+	text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+
+/* DEMO 1 */
+
+.demo-1 .main h1 {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+}
+
+.demo-1 .main h2 {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 40px;
+	font-family: 'Orienta', sans-serif;
+
+}
+
+.demo-1 .main h3 {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-size: 22px;
+	line-height: 40px;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: 'Orienta', sans-serif;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+.demo-1 .main h4 {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+	font-family: 'Orienta', sans-serif;
+}
+
+/* DEMO 2 */
+
+.demo-2 .main h1 {
+	margin: 1em 0 0.5em 0;
+	font-weight: 600;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;  
+	font-size: 36px;
+	line-height: 40px;
+	padding: 15px 15px 15px 15%;
+	color: #355681;
+	box-shadow: 
+		inset 0 0 0 1px rgba(53,86,129, 0.4), 
+		inset 0 0 5px rgba(53,86,129, 0.5),
+		inset -285px 0 35px white;
+	border-radius: 0 10px 0 10px;
+	background: #fff url(../images/bartoszkosowski.jpg) no-repeat center left;
+}
+
+.demo-2 .main h2 {
+	margin: 1em 0 0.5em 0;
+	font-weight: normal;
+	position: relative;
+	text-shadow: 0 -1px rgba(0,0,0,0.6);
+	font-size: 28px;
+	line-height: 40px;
+	background: #355681;
+	background: rgba(53,86,129, 0.8);
+	border: 1px solid #fff;
+	padding: 5px 15px;
+	color: white;
+	border-radius: 0 10px 0 10px;
+	box-shadow: inset 0 0 5px rgba(53,86,129, 0.5);
+	font-family: 'Muli', sans-serif;
+}
+
+.demo-2 .main h3 {
+	margin: 1em 0 0.5em 0;
+	font-weight: 600;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+	font-size: 22px;
+	line-height: 40px;
+	color: #355681;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(53,86,129, 0.3);
+}
+
+.demo-2 .main h4 {
+	margin: 1em 0 0.5em 0;
+	font-weight: 600;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;
+	font-size: 18px;
+	line-height: 20px;
+	color: #788699;
+	font-family: 'Muli', sans-serif;
+}
+
+/* DEMO 3 */
+ 
+.demo-3 .main h2:after, 
+.demo-3 .main h3:after, 
+.demo-3 .main h4:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 5px;
+	border-radius: 2px;
+	box-shadow: 
+		inset 0 1px 1px rgba(0,0,0,0.5), 
+		0 1px 1px rgba(255,255,255,0.3);
+}
+.demo-3 .main h2:after { background: #0AF; }
+.demo-3 .main h3:after { background: #3BF; }
+.demo-3 .main h4:after { background: #6Cf; }
+
+.demo-3 .main h1 {
+	font-size: 36px;
+	line-height: 40px;
+	margin: 1em 0 .6em 0;
+	font-weight: normal;
+	color: white;
+	font-family: 'Hammersmith One', sans-serif;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+	position: relative;
+	color: #6Cf;
+}
+
+.demo-3 .main h2 {
+	margin: 1em 0 .6em 0;
+	padding: 0 0 0 20px;
+	font-weight: normal;
+	color: white;
+	font-family: 'Hammersmith One', sans-serif;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+	position: relative;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.demo-3 .main h3 {
+	margin: 1em 0 .6em 0;
+	padding: 0 0 0 20px;
+	font-weight: normal;
+	color: white;
+	font-family: 'Hammersmith One', sans-serif;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+	position: relative;
+	font-size: 24px;
+	line-height: 40px;
+	font-family: 'Questrial', sans-serif;
+}
+
+.demo-3 .main h4 { 
+	margin: 1em 0 .6em 0;
+	padding: 0 0 0 20px;
+	font-weight: normal;
+	color: white;
+	font-family: 'Hammersmith One', sans-serif;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+	position: relative;
+	font-size: 18px;
+	line-height: 20px;
+	font-family: 'Questrial', sans-serif;
+}
+
+/* DEMO 4 */
+
+.demo-4 .main h1 i, 
+.demo-4 .main h2 i, 
+.demo-4 .main h3 i, 
+.demo-4 .main h4 i {
+	padding-right: 10px;
+	color: #A8D13B;
+	font-size: 0.8em;
+}
+
+.demo-4 .main h2:after, 
+.demo-4 .main h3:after, 
+.demo-4 .main h4:after {
+	position: absolute;
+	content: "";
+	height: 1px;
+	border-radius: 2px;
+	left: 0;
+	bottom: 0;
+	box-shadow: 
+		0 -1px 0 rgba(0,0,0,0.1), 
+		0 1px 0 rgba(255,255,255,0.6);
+}
+
+.demo-4 .main h2:after { width: 100%; } 
+.demo-4 .main h3:after { width:  75%; }
+.demo-4 .main h4:after { width:  50%; }
+
+
+.demo-4 .main h1 {
+	margin: 1em 0 0.75em;
+	padding: 0 0 5px 0;
+	color: #6B5344;
+	font-weight: normal;
+	position: relative;
+	text-shadow: 0 2px 0 rgba(255,255,255,0.5);
+	font-size: 36px;
+	line-height: 40px;
+	font-family: 'Carrois Gothic', sans-serif;
+}
+
+.demo-4 .main h2 {
+	margin: 1em 0 0.75em;
+	padding: 0 0 5px 0;
+	color: #6B5344;
+	font-weight: normal;
+	font-family: 'Scada', sans-serif;
+	position: relative;
+	text-shadow: 0 2px 0 rgba(255,255,255,0.5);
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.demo-4 .main h3 {
+	margin: 1em 0 0.75em;
+	padding: 0 0 5px 0;
+	color: #6B5344;
+	font-weight: normal;
+	font-family: 'Scada', sans-serif;
+	position: relative;
+	text-shadow: 0 2px 0 rgba(255,255,255,0.5);
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.demo-4 .main h4 {
+	margin: 1em 0 0.75em;
+	padding: 0 0 5px 0;
+	color: #6B5344;
+	font-weight: normal;
+	font-family: 'Scada', sans-serif;
+	position: relative;
+	text-shadow: 0 2px 0 rgba(255,255,255,0.5);
+	font-size: 18px;
+	line-height: 20px;
+}
+
+/* DEMO 5 */
+
+.demo-5 .main {
+	counter-reset: section-1, section-2, section-3, section-4;
+}
+
+.demo-5 .main h1 {
+	margin: 0.8em 0 0.5em 0;
+	color: #333;
+	font-weight: normal;
+	font-family: 'Orienta', sans-serif;
+	font-size: 36px;
+	line-height: 40px;
+	counter-increment: section-1;
+	counter-reset: section-2 section-3 section-4;
+}
+
+.demo-5 .main h2 {
+	margin: 0.8em 0 0.5em 0;
+	color: #333;
+	font-weight: normal;
+	font-family: 'Orienta', sans-serif;
+	font-size: 30px;
+	line-height: 40px;
+	counter-increment: section-2;
+	counter-reset: section-3 section-4;
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	padding-bottom: 10px;
+}
+
+.demo-5 .main h3 {
+	margin: 0.8em 0 0.5em 0;
+	color: #333;
+	font-weight: normal;
+	font-family: 'Orienta', sans-serif;
+	font-size: 24px;
+	line-height: 40px;
+	counter-increment: section-3;
+	counter-reset: section-4;
+}
+
+.demo-5 .main h4 {
+	margin: 0.8em 0 0.5em 0;
+	color: #333;
+	font-weight: normal;
+	font-family: 'Orienta', sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	counter-increment: section-4;
+}
+
+.demo-5 .main h1:before { content: counter(section-1) ". "; }
+.demo-5 .main h2:before { content: counter(section-1) "." counter(section-2) " "; }
+.demo-5 .main h3:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) " "; }
+.demo-5 .main h4:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) "." counter(section-4) " "; }
+
+/* DEMO 6 */
+
+.demo-6 .main h1 {
+	margin: 1em 0 0.5em 0;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #00caa6;
+	font-style: italic;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 58px;
+	line-height: 54px;
+	text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+}
+
+.demo-6 .main h2 {
+	margin: 1em 0 0.5em 0;
+	color: #148773;
+	font-size: 26px;
+	line-height: 40px;
+	font-weight: 700;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.demo-6 .main h3 {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-size: 22px;
+	line-height: 40px;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+.demo-6 .main h4 {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 700;
+	font-family: 'Josefin Sans', sans-serif;
+}

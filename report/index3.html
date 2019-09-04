@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-3">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>LOTRO report</title>
+		<meta name="description" content="Custom Heading Set Styling with CSS" />
+		<meta name="keywords" content="headings, h1, h2, h3, styling, css, vertical rythm, custom, creative, styles" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Hammersmith+One|Questrial' rel='stylesheet' type='text/css'>
+		<script src="js/modernizr.custom.63321.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		
+			<!-- Codrops top bar -->
+			<div class="codrops-top clearfix">
+				<a href="https://lotro.github.io/LOTRO%20webiste/index.html">
+					<strong>&laquo; Back to the website
+				</a>
+			</div><!--/ Codrops top bar -->
+			
+			<header>
+			
+				<h1><strong>LOTRO ontology</strong></h1>
+				<h2>Our full report</h2>
+				
+				
+			</header>
+			
+			<section class="main">
+				<h1>Report of LOTRO ontology project</h1>
+				<h2>Index</h2>
+				<div id="toc_container">
+<ul class="toc_list">
+  <li><p><a href="#introduction">Introduction</a>
+  <ul>
+    <li style="margin-left: 1.5em"><p><a href="#whylotr">Why <i>The Lord of the Rings?</i></a></li>
+  </ul>
+</li>
+<li><p><a href="#linguisticanalysis">Linguistic Analysis</a></li>
+<li style="margin-left: 1.5em"><p><a href="#furtherlinguisticanalysis">Further possible linguistic analysis</i></a></li>
+<li><p><a href="#textualanalysis">Textual Analysis</a></li>
+	<li style="margin-left: 1.5em"><p><a href="#sentimentanalysis">Sentiment analysis</i></a></li>
+<li style="margin-left: 3em"><p><a href="#thestrategy">The strategy</i></a></li>
+	<li style="margin-left: 3em"><p><a href="#theoutcome">The outcome</i></a></li>
+<li style="margin-left: 3em"><p><a href="#limitations">Limitations</i></a></li>
+<li style="margin-left: 3em"><p><a href="#closeness">Closeness of characters</i></a></li>
+	<li style="margin-left: 1.5em"><p><a href="#fred">FRED</i></a></li>
+<li style="margin-left: 3em"><p><a href="#whatisfred">What is FRED?</i></a></li>
+<li style="margin-left: 3em"><p><a href="#howdidweuse">How did we use it?</i></a></li>
+<li style="margin-left: 3em"><p><a href="#futureimplementation">Possible future implementation</i></a></li>
+  <li><p><a href="#representationofinformation">Representation of the information</a>
+  <li><p><a href="#ontologycreation">Structuring and Ontology creation</a>
+ <li style="margin-left: 1.5em"><p><a href="#usefulontology">How can an ontology be useful?</i></a></li>
+<li style="margin-left: 3em"><p><a href="#classes">Classes</i></a></li>
+<li style="margin-left: 3em"><p><a href="#relationships">Relationships</i></a></li>
+<li style="margin-left: 3em"><p><a href="#instances">Instances</i></a></li>
+<li style="margin-left: 3em"><p><a href="#simplifiedschema">A simplified schema of our ontology</i></a></li>
+<li style="margin-left: 3em"><p><a href="#someindividuals">Some of our individuals</i></a></li>
+  <li><p><a href="#publicationandvisualization">Publication and visualization of our ontology</a>
+  <li><p><a href="#conclusions">Conclusions</a>
+   <li><p><a href="#bibliographyandsitography">Bibliography and Sitography</a>
+</ul>
+</div>
+				<h2 id="introduction">Introduction</h2>
+				<p>This project is aimed at representing a knowledge graph of our linguistic analysis and creating a web page which makes the philological knowledge accessible to casual users.
+				«As useful tools for sharing and exchanging knowledge, ontologies are a formal, explicit specification of a shared conceptualization». 
+				We chose to create a knowledge graph that connects a sample of the characters of the <i>The Lord of the Rings - The Fellowship of the Ring</i>, analyzing their relationships and the etymology of their names. Our ontology will make all the structured knowledge accessible to humans and computer programs and it will also provide a common vocabulary.
+				</p>
+				<br>
+				<h3 id="whylotr">Why <i>The Lord of the Rings?</i></h3>
+	  <p>We decided to build our ontology around the book titled <i>The Fellowship of the Ring</i>, namely, the first book of the renowned trilogy <i>The Lord of the Rings</i>, written by the British author J. R.R. Tolkien. The choice was due to our shared interest regarding the topic, but also to the versatility of the book; as a matter of fact, when writing his masterpiece, Tolkien spent a lot of time taking care of every single detail, names creation included, merging his philological and linguistic knowledge with a lot of fantasy and semantic research.</p>
+				<br>
+				<p>Before being one of the most known writers of our time, Tolkien was a scholar and, particularly, a philologist and a linguist. As a matter of fact, the British professor started inventing and creating new languages when he was very young. He even shared a secret language with his brother Hilary, a language than only the two of them knew and spoke.</p>
+				<br>
+				<p>Furthermore, Tolkien worked as professor of English language and literature in many British universities, occupation that allowed him to study in depth the language both from the historical and the linguistic point of view. Tolkien became soon one of the major experts of Germanic languages, particularly Anglo-Saxon (or Old English).</p>
+				<br>
+				<p>We found this topic very interesting, especially because Tolkien managed to use his deep knowledge of linguistics to create from scratch the names of his masterpiece. Other than the article that we mentioned, we found other research works concerning etymology of the names in <i>The Lord of the Rings</i>, mostly made by the fans of the saga, but also an essay written by Tolkien himself and some other papers created by other scholars; despite Tolkien’s work is often associated to some geek and odd worlds, it does possess very interesting features that are studied everyday by experts and professionals.</p>
+				<br>
+				<p>The core of our analysis, therefore, started from the fact that not only the names are created according to linguistic and philological rules, but the meaning of many names represents the personality and/or the role of the particular character in the novel.</p>
+				<br>
+				<h2 id="linguisticanalysis">Linguistic analysis</h2>
+				<p>John R.R. Tolkien was not just the writer of <i>The Lord of the Rings</i> and The Hobbit. He was, first and foremost, a linguist and a philologist. Tolkien’s passion for creating not only imaginary worlds, but also languages, started very early in the writer’s life. As a matter of fact, some testimonies in Humphrey Carpenter’s Biography of Tolkien testify how the British writer spent the first years of his life creating imaginary languages that he spoke with his brother, Hilary Tolkien. Growing up, Tolkien became proficient in many ancient languages, until he was recognized as one of the major specialists of Middle and Old English (i.e. Anglo-Saxon). He wrote what was for quite a while the definitive translation of Sir Gawain and the Green Knight and was also very known and appreciated for the essay he presented titled <i>Beowulf: The Monster and the Critics</i>. </p>
+				<br>
+				<p>In succession, he used his passion and inclination for the linguistic field to broaden his masterpiece of literature and created several languages that are actually spoken by the characters of <i>The Lord of the Rings</i>. Over the progress of our research, we found out that every proper name that Tolkien used to name his characters has a precise etymology and a precise meaning, which is often reflected in the characters’ actions throughout the development of the plot. As a matter of fact, Tolkien took words both from real languages (such as Anglo-Saxon, Middle-English, Modern English, Latin, Welsh) and from languages he created (such as Quenya, Westron or Sindarin) in order to make names that have a precise and studied meaning.
+				</p>
+				<br>
+				<p>While browsing and looking for information concerning this aspect, we chanced upon a very interesting <a href="https://www.nottingham.ac.uk/english/documents/innervate/13-14/02-ellen-fisher-q33407-pp-21-34.pdf">article</a> written by Ellen Rose Fisher. After an analysis of the key points of the article, we decided that names’ creation deserves a particular attention and is worth studying with proficiency. This is the reason why chose to focus our analysis on names’ creation and etymology.</p>
+				<br>
+				<p>Therefore, we gathered information both from Fisher’s article and from other reliable sources that we found online. Right after, we created a sort of index where we listed the characters’ names and the meaning associated with it. In our ontology, as it will be explained later, we took a sample of 11 characters, but we analyzed the names of all the characters that appear in the first book.</p>
+					<br>
+				<p>The result of our research is the following.</p>
+
+<table class="table table-bordered table-dark" style="width: 873px; height: 142px;">
+<thead>
+<tr style="height: 66px;">
+<th style="width: 23px; height: 66px;" scope="col">#</th>
+<th style="width: 165px; height: 66px;" scope="col"><span style="color: #6cf;">Name</span></th>
+<th style="width: 168.667px; height: 66px;" scope="col"><span style="color: #6cf;">Etymology</span></th>
+<th style="width: 227.333px; height: 66px;" scope="col"><span style="color: #6cf;">Language of derivation</span></th>
+<th style="width: 243px; height: 66px;" scope="col"><span style="color: #6cf;">Meaning</span></th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 55px;">
+<th style="width: 23px; height: 55px;" scope="row">1</th>
+<td style="width: 165px; height: 55px; text-align: center;"><span style="font-weight: 400;">Frodo Baggins</span></td>
+<td style="width: 168.667px; height: 55px; text-align: center;">Frod + Bagging</td>
+<td style="width: 227.333px; height: 55px; text-align: center;">Anglo-Saxon + Northern English</td>
+<td style="width: 243px; height: 55px; text-align: center;">Wise by experience + Eating between meals</td>
+</tr>
+<tr style="height: 52px;">
+<th style="width: 23px; height: 52px;" scope="row">2</th>
+<td style="width: 165px; height: 52px; text-align: center;">Gollum</td>
+<td style="width: 168.667px; height: 52px; text-align: center;">Gull</td>
+<td style="width: 227.333px; height: 52px; text-align: center;">Old Norse</td>
+<td style="width: 243px; height: 52px; text-align: center;">Gold</td>
+</tr>
+<tr style="height: 71px;">
+<th style="width: 23px; height: 71px;" scope="row">3</th>
+<td style="width: 165px; height: 71px; text-align: center;">Samwise Gamgee</td>
+<td style="width: 168.667px; height: 71px; text-align: center;"><span style="font-weight: 400;">Samw&iacute;s + Gamgee<br /></span></td>
+<td style="width: 227.333px; height: 71px; text-align: center;">Anglo-Saxon + Contemporary English</td>
+<td style="width: 243px; height: 71px; text-align: center;">Simple minded + Cotton Wool</td>
+</tr>
+<tr style="height: 66px;">
+<th style="width: 23px; height: 66px;" scope="row">4</th>
+<td style="width: 165px; height: 66px; text-align: center;">Saruman</td>
+<td style="width: 168.667px; height: 66px; text-align: center;"><span style="font-weight: 400;">Searu</span></td>
+<td style="width: 227.333px; height: 66px; text-align: center;">Anglo-Saxon</td>
+<td style="width: 243px; height: 66px; text-align: center;"><span style="font-weight: 400;">Malicious work of skill or "device", machine/armoury</span></td>
+</tr>
+<tr style="height: 51px;">
+<th style="width: 23px; height: 51px;" scope="row">5</th>
+<td style="width: 165px; height: 51px; text-align: center;">Peregrin Took</td>
+<td style="width: 168.667px; height: 51px; text-align: center;">Pelegrinus + T&ucirc;k</td>
+<td style="width: 227.333px; height: 51px; text-align: center;">Latin + Westron</td>
+<td style="width: 243px; height: 51px; text-align: center;">Wanderer + daring</td>
+</tr>
+<tr style="height: 69px;">
+<th style="width: 23px; height: 69px;" scope="row">6</th>
+<td style="width: 165px; height: 69px; text-align: center;">Meriadoc Brandybuck</td>
+<td style="width: 168.667px; height: 69px; text-align: center;"><span style="font-weight: 400;">Mawr</span> + Udd; Brandagamba</td>
+<td style="width: 227.333px; height: 69px; text-align: center;">Welsh + Westron</td>
+<td style="width: 243px; height: 69px; text-align: center;">Great + lord; Border-water</td>
+</tr>
+<tr style="height: 53px;">
+<th style="width: 23px; height: 53px;" scope="row">7</th>
+<td style="width: 165px; height: 53px; text-align: center;">Gandalf</td>
+<td style="width: 168.667px; height: 53px; text-align: center;"><span style="font-weight: 400;">gandr + &aacute;lfr</span></td>
+<td style="width: 227.333px; height: 53px; text-align: center;">Old Norse</td>
+<td style="width: 243px; height: 53px; text-align: center;">Wand Elf</td>
+</tr>
+<tr style="height: 57px;">
+<th style="width: 23px; height: 57px;" scope="row">8</th>
+<td style="width: 165px; height: 57px; text-align: center;">Aragorn</td>
+<td style="width: 168.667px; height: 57px; text-align: center;">Aran + gorn</td>
+<td style="width: 227.333px; height: 57px; text-align: center;">Sindarin</td>
+<td style="width: 243px; height: 57px; text-align: center;">King + revered</td>
+</tr>
+<tr style="height: 56px;">
+<th style="width: 23px; height: 56px;" scope="row">9</th>
+<td style="width: 165px; height: 56px; text-align: center;">Boromir</td>
+<td style="width: 168.667px; height: 56px; text-align: center;"><span style="font-weight: 400;">b&ocirc;r + m&iacute;r&euml;<br /></span></td>
+<td style="width: 227.333px; height: 56px; text-align: center;">Sindarin + Quenya</td>
+<td style="width: 243px; height: 56px; text-align: center;"><span style="font-weight: 400;">Steadfast + jewel</span></td>
+</tr>
+<tr style="height: 55px;">
+<th style="width: 23px; height: 55px;" scope="row">10</th>
+<td style="width: 165px; height: 55px; text-align: center;">Legolas</td>
+<td style="width: 168.667px; height: 55px; text-align: center;"><span style="font-weight: 400;">laeg</span> + golas</td>
+<td style="width: 227.333px; height: 55px; text-align: center;">Sindarin</td>
+<td style="width: 243px; height: 55px; text-align: center;">Green + foliage</td>
+</tr>
+<tr style="height: 54px;">
+<th style="width: 23px; height: 54px;" scope="row">11</th>
+<td style="width: 165px; height: 54px; text-align: center;">Gimli</td>
+<td style="width: 168.667px; height: 54px; text-align: center;">Gimm</td>
+<td style="width: 227.333px; height: 54px; text-align: center;">Old Norse</td>
+<td style="width: 243px; height: 54px; text-align: center;">Fire</td>
+</tr>
+<tr style="height: 56px;">
+<th style="width: 23px; height: 56px;" scope="row">12</th>
+<td style="width: 165px; height: 56px; text-align: center;">Galadriel</td>
+<td style="width: 168.667px; height: 56px; text-align: center;">Galad + riel</td>
+<td style="width: 227.333px; height: 56px; text-align: center;">Sindarin</td>
+<td style="width: 243px; height: 56px; text-align: center;">Radiant + maiden</td>
+</tr>
+<tr style="height: 55px;">
+<th style="width: 23px; height: 55px;" scope="row">13</th>
+<td style="width: 165px; height: 55px; text-align: center;">Elrond</td>
+<td style="width: 168.667px; height: 55px; text-align: center;">Elrond</td>
+<td style="width: 227.333px; height: 55px; text-align: center;">Sindarin</td>
+<td style="width: 243px; height: 55px; text-align: center;">Star dome</td>
+</tr>
+<tr style="height: 54px;">
+<th style="width: 23px; height: 54px;" scope="row">14</th>
+<td style="width: 165px; height: 54px; text-align: center;">Sauron</td>
+<td style="width: 168.667px; height: 54px; text-align: center;">Saura</td>
+<td style="width: 227.333px; height: 54px; text-align: center;">Quenya</td>
+<td style="width: 243px; height: 54px; text-align: center;">&nbsp;Foul, putrid, evil-smelling</td>
+</tr>
+<tr style="height: 61px;">
+<th style="width: 23px; height: 61px;" scope="row">15</th>
+<td style="width: 165px; height: 61px; text-align: center;">Bilbo</td>
+<td style="width: 168.667px; height: 61px; text-align: center;">Bil + b&oacute; / Bilbo</td>
+<td style="width: 227.333px; height: 61px; text-align: center;">Anglo-Saxon / Contemporary English</td>
+<td style="width: 243px; height: 61px; text-align: center;">&nbsp;Blade + both / <span style="font-weight: 400;">cut-and-thrust sword</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h4 id="furtherlinguisticanalysis">Further possible linguistic analysis
+</h4>
+<p>We guessed that the etymology of each character’s name identifies a specific meaning that is related to the character’s behaviour or to an event that is important for that character. </p>
+<p>It would be very interesting to develop further research about it.</p>
+<br>
+				<h2 id="textualanalysis">Textual analysis</h2>
+		 <p>Machines can access huge databases and elaborate a long text in a short time. Can we produce innovative interpretations of a text by using techniques which rely heavily on computer programs?</p>
+		 <br>
+		 <p>The technique called <strong>sentiment analysis</strong>, allows one to quantify and track emotions from a text corpus, be it big or small. We used this method in order to determine two entities’ emotion association. We did so by taking into consideration and analyzing the co-occurring words in a sample of paragraphs where the two entities appear together.</p> 
+		 <br>
+		 <p class="text-muted">Another tool that we used for our research is <a href="http://wit.istc.cnr.it:9191/fred?text=This+is+me&prefix=fred%3A&namespace=http%3A%2F%2Fwww.ontologydesignpatterns.org%2Font%2Ffred%2Fdomain.owl%23&wfd_profile=b&textannotation=earmark&format=image%2Fpng">FRED</a>. It extracts, from natural language sentences, event-based knowledge that can be used to automatically produce RDF/OWL ontologies and linked data.</p> 
+		 <br>
+		 <p>Natural language can be automatically translated into a formal structured knowledge that can be interpreted by machines according to a shared semantics. We analyzed FRED’s output graphs in order to extract useful information to define some properties of our ontologies.</p>
+
+				<h3 id="sentimentanalysis">Sentiment analysis</h3>
+				<h4 id="thestrategy">The strategy</h4>
+<p>First of all, we tried to discover who are characters who appear more often.
+</p>
+<br>
+<a href="images/chart11.png">
+<img src="images/chart11.png" alt="chart1" class="responsive"/>
+</a>
+<br>
+<p>Once we knew it, we decided to discover how they interact. We took into consideration in our research only the first fifteen characters for number of appearances.
+</p>
+<p>
+In order to examine the type of relationship between two characters we have implemented a Python program. The program takes any two characters from the text, and checks if those two characters appear in the same paragraph. 
+</p>
+<br>
+<p>After identifying the paragraphs, the program identifies the sentiment of each paragraph by implementing the textBlob Python library. The output of the program is shown by the polarity of the sentiment. The polarity is shown by the values between -1 and 1. If the polarity of a paragraph is lesser than 1, then the relationship is identified as negative. If the value is 0, then the sentiment is neutral, otherwise it’s positive. 
+</p>
+<br>
+<h4 id="theoutcome">The outcome</h4>
+<p>The chart below shows the result obtained by executing the program:
+</p>
+<br>
+<a href="images/chart1.png">
+<img src="images/chart1.png" alt="chart1" class="responsive"/></a>
+<br>
+<p>As one can observe from the chart, the values are between 0 and 1. When the polarity value is below zero, it is implied that the relationship between two characters is negative. The polarity value of paragraphs in which the following characters appear together comes to be negative. 
+</p>
+<br>
+<p>List of characters with negative relationship:
+</p>
+<p>1. Frodo, Sauron</p>
+<p>2. Samwise, Boromir</p>
+<p>3. Gandalf, Boromir</p>
+<p>4. Sauron, Gimli</p>
+<p>5. Saruman, Legolas</p>
+<p>6. Peregrin, Aragon</p>
+<p>7. Boromir, Legolas</p>
+<br>
+<p>The rest of paragraphs have polarity value above zero. This means that the relationship between those two characters is positive. </p>
+<br>
+				<h4 id="limitations">Limitations</h4>
+				<p>In any case, it is necessary to apply close reading techniques in order to get more reliable and trustworthy results. Distant reading techniques are extremely powerful and can analyze huge amount of text in a very short time, but the human intervention is still needed to improve the outcomes. 
+</p>
+<br>
+<p>That is because, despite the fact that the results of our Python program can be accurate,  usually paragraphs discuss about things that are not directly related to characters. Because of this reason it is difficult to determine the type of relationship between characters.
+</p>
+<br>
+<p>The result of merging close reading and distant reading turns to be in some way similar to the result that we obtained from the distance reading, but with some variance.
+</p>
+<br>
+<h4 id="closeness">Closeness of characters</h4>
+<p>In addition to sentiment analysis of characters in the book, we also tried to determine how close two characters are. To understand this, we first analyzed paragraphs in which characters appear. After doing that, we counted how many times the charcaters appear together. Then, we concluded that characters that appear together are often closer to each other than those that appear only in a few paragraphs. </p>
+<br>
+<p>The following chart depicts the output of executing our program:
+</p>
+<br>
+<a href="images/chart2.png">
+<img src="images/chart2.png" alt="chart1" class="responsive"/></a>
+<br>
+<p>The chart shows that some characters appear many times together in the book, while some others only for a few times. For example, the following characters appear in the same paragraph more than 60 times:
+</p>
+<br>
+<center><table style="width: 411px; height: 351px;">
+<tbody>
+<tr>
+<td style="width: 226.983px; text-align: center;">
+<p><span style="color: #6cf;"><strong>Characters</strong></span></p>
+</td>
+<td style="width: 167.017px; text-align: center;">
+<p><span style="color: #6cf;"><strong>Frequency</strong></span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 226.983px; text-align: center;">
+<p><span style="font-weight: 400;">Frodo and Sam</span></p>
+</td>
+<td style="width: 167.017px; text-align: center;">
+<p><span style="font-weight: 400;">160</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 226.983px; text-align: center;">
+<p><span style="font-weight: 400;">Frodo and Gandalf</span></p>
+</td>
+<td style="width: 167.017px; text-align: center;">
+<p><span style="font-weight: 400;">127</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 226.983px; text-align: center;">
+<p><span style="font-weight: 400;">Frodo and Aragon</span></p>
+</td>
+<td style="width: 167.017px; text-align: center;">
+<p><span style="font-weight: 400;">102</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 226.983px; text-align: center;">
+<p><span style="font-weight: 400;">Frodo and Bilbo</span></p>
+</td>
+<td style="width: 167.017px; text-align: center;">
+<p><span style="font-weight: 400;">100</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 226.983px; text-align: center;">
+<p><span style="font-weight: 400;">Frodo and Pippin</span></p>
+</td>
+<td style="width: 167.017px; text-align: center;">
+<p><span style="font-weight: 400;">88</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 226.983px; text-align: center;">
+<p><span style="font-weight: 400;">Sam and Pippin</span></p>
+</td>
+<td style="width: 167.017px; text-align: center;">
+<p><span style="font-weight: 400;">68</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 226.983px; text-align: center;">
+<p><span style="font-weight: 400;">Pippin and Merry</span></p>
+</td>
+<td style="width: 167.017px; text-align: center;">
+<p><span style="font-weight: 400;">61</span></p>
+</td>
+</tr>
+</tbody>
+</table></center>
+<p>&nbsp;</p>
+<p>The following table shows characters that appear less than ten times together in the same paragraphs:</p>
+<br>
+<center>
+<table style="height: 1130px; width: 338.4px;">
+<tbody>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Gandalf', 'Sauron')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">5</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Gandalf', 'Saruman')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">5</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Saruman', 'Elrond')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">4</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Pippin', 'Elrond')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">4</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Sauron', 'Boromir')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">3</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Bilbo', 'Saruman')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">3</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Gollum', 'Saruman')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">3</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Gollum', 'Legolas')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">3</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Saruman', 'Aragorn')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">3</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Frodo', 'Sauron')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">2</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Sam', 'Gollum')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">2</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Sauron', 'Aragorn')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">2</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Bilbo', 'Boromir')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">2</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Bilbo', 'Legolas')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">2</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Merry', 'Elrond')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">2</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Gimli', 'Elrond')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">2</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Sam', 'Saruman')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">1</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Sauron', 'Gimli')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">1</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Bilbo', 'Gimli')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">1</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Gollum', 'Boromir')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">1</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Saruman', 'Legolas')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">1</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px; text-align: center;">
+<p><span style="font-weight: 400;">('Legolas', 'Elrond')</span></p>
+</td>
+<td style="width: 143.4px; text-align: center;">
+<p><span style="font-weight: 400;">1</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p></center>
+<br>
+<p>The tables above can help us to understand how close two characters are. In addition, as depicted in the tables, some characters appear more than hundred times, while others appear together in less than five paragraphs. This in return can guide us to identify characters which are close to each other. 
+</p>
+				<h3 id="fred">FRED</h3>
+				<p>FRED is a tool that extracts event-based knowledge from natural language sentences. This knowledge can be used to automatically produce RDF/OWL ontologies and linked data.  FRED is able to transform natural language text into formal and structured knowledge that can be interpreted by machines according to a shared semantics.</p> 
+<p>We used just a small extent of its potentiality. As a matter of fact, we just analyzed FRED’s output graphs in order to extract useful information able define some properties. 
+</p><br>
+<h4 id="whatisfred">What is FRED?</h4>
+<p>According to a <a href="http://semantic-web-journal.org/system/files/swj1379.pdf">paper describing FRED</a> published in the Semantic Web Journal by IOS Press, FRED is a tool able to transform natural language text to formal structured knowledge that can be interpreted by machines according to a shared semantics. It can parse natural language text in 48 different languages and transform it to linked data.</p>
+<br>
+<p>FRED’s output graph is designed according to Frame Semantics and ontology design patterns. Verbs or other linguistic constructions recognized in an input text are formalized as OWL n-ary relations and they can be expressed by instances of some type of event or situation.</p><br>
+<p>When it is possible, individuals are linked to existing semantic web entities (e.g. <a href=”https://wiki.dbpedia.org/”>dbpedia</a>).
+FRED can be very useful to extract relations between frames, events, concepts and entities and for the pattern-based subgraph extraction. Moreover, it can be used so as to make semantic annotation of text fragments, to link the entities into Semantic Web data and for the word-sense disambiguation.</p><br>
+<h4 id="howdidweuse">How did we use it?</h4>
+<p>What are the limits and possibilities of the knowledge extraction from text? Natural languages can be ambiguous, and the literal interpretation of a text is not always the correct one. </p>
+<br>
+<p>However, FRED can be potentially used for the the word-sense disambiguation and to extract relations between concepts and entities.</p>
+<br>
+<p>In particular, we used this tool and the graphs which were generated in order to extract useful information able to define properties. </p>
+<br>
+<p>For instance, here you can read a phrase that we extracted from the text. Two characters are involved, Frodo and Bilbo Baggins:</p>
+<br>
+<p>«When Bilbo was ninety-nine, he adopted Frodo as his heir, and brought him to 
+live at Bag End.»</p>
+<p>We used FRED in order to visualize the graph structure:</p>
+<br>
+<a href="http://wit.istc.cnr.it:9191/fred/xdot/graphviz_1565955044220.gv">
+<img src="images/chart3.png" alt="chart3" class="responsive"/></a>
+<br>
+<br>
+<p>By analyzing the graph structure, you can see that we have two situations: in the first one it is specified that Bilbo has the quality of being ninety-nine. Instead, in the second situation, a more complex scenario is displayed. Here, Bilbo lives in Bag End with his adopted heir, Frodo.</p>
+<p><strong>The formalization of this phrase allows no ambiguity and the expressed knowledge can be interpreted by machines.</strong></p>
+<br>
+<p>It can be expressed in different formats such as RDF/XML or RDF/JASON, Turtle etc... we used our ontology in order to represent the same knowledge:</p>
+<br>
+<a href="images/chart4.png">
+<img src="images/chart4.png" alt="chart4" class="responsive"/></a>
+<br>
+<p>It can also be visualized in this way:</p>
+<br>
+<a href="images/chart5.png">
+<img src="images/chart5.png" alt="chart5" class="responsive"/></a>
+<br>
+<p>We have also another example of how we used FRED in order to make explicit some relationships among characters. In fact, another phrase that we extracted from the text is:</p>
+<br>
+<p>«Bilbo and Frodo happened to have the same birthday, September 22nd.»</p>
+<br>
+<p>Again, we used FRED in order to visualize the graph structure:</p>
+<br>
+<a href="http://wit.istc.cnr.it:9191/fred/xdot/graphviz_1566316882047.gv">
+<img src="images/chart6.png" alt="chart6" class="responsive"/></a>
+<br>
+<p>In this case, the graph identifies two entities: Bilbo and Frodo, then it shows that they share an event, as a matter of fact they have in common the same birthday (09-22).</p>
+<br>
+<a href="images/chart7.png">
+<img src="images/chart7.png" alt="chart7" class="responsive"/></a>
+<br>
+<a href="images/chart8.png">
+<img src="images/chart8.png" alt="chart8" class="responsive"/></a>
+<br><p>and</p><br>
+<a href="images/chart9.png">
+<img src="images/chart9.png" alt="chart9" class="responsive"/></a>
+<br>
+<a href="images/chart10.png">
+<img src="images/chart10.png" alt="chart10" class="responsive"/></a>
+<br>
+<h4 id="futureimplementation">Possible future implementation</h4>
+<p>We thought that a possible future development of our work could be an implementation of FRED with our ontology, as the tool is now linked to DBpedia, WordNet, schema.org, VerbNet, FrameNet and other figures. In such a situation, we could use FRED’s API on the text of <i>The Lord of The Rings</i>. Right after, we would reuse the NLP output generated by FRED connecting the entities and the relations in <i>The Lord of the Rings</i> in order to generate Linked Data patterns, links between the entities or a broad annotation of the text. Finally, this could allow the representation of an interface able to create queries on the knowledge extracted by the text, for instance converting automatically natural language question in SPARQL (possibly with tools like <a href="http://quepy.machinalis.com/">Quepy</a>).
+</p>
+<p>So far, we used FRED simply to extract from the text the relationships developing among the characters without any ambiguities.</p>
+<br> 
+<p>Potentially, we could use FRED’s API in order to automatically generate knowledge from the text and give it a structure and a formal expression through our ontology.
+Once our ontology has been created and published online, we could reuse the NLP output generated by FRED connecting our entities and the relations in LOD. Using tools like Quepy, we could transform natural language questions into queries.</p>
+<p>For example, the question "Who is Frodo Baggins?" will be translated into: </p>
+<br>
+<p style="font-family:courier;">SELECT DISTINCT ?x1 WHERE {</p>
+<p style="font-family:courier; margin-left: 1.5em">?x0 rdf:type lotro:Character.</p>
+<p style="font-family:courier; margin-left: 1.5em">  ?x0 rdfs:label "Frodo Baggins"@en.</p>
+<p style="font-family:courier;">}</p>
+<br>
+<p>Our ontology will then provide some useful knowledge, for example, from the ontology properties:</p>
+<br>
+<a href="images/chart12.png">
+<img src="images/chart12.png" alt="chart12" class="responsive"/></a>
+<br>
+<p>And more from the annotated text that we will have with the possible future implementation.</p>
+<br>
+<h2 id="representationofinformation">Representation of the information</h2>
+				<p>After having collected the data through the Sentiment analysis technique and the FRED interpretation of the text, we structured the automatically extracted data in information thanks to our previous knowledge of the topic and to specific linguistic research; therefore we applied the close-reading technique to the distant-reading one.</p>
+<br>
+<p>Humans have the ability to contextualize data providing a sense and a context to them through their personal knowledge of the topic, but a casual user may be unaware of the events or the characters that populate <i>The Lord of the Rings - The Fellowship of the Ring</i>; furthermore, we needed to make this data understandable also by computer programs. For these reasons, we created relationships and chose the information that we wanted to represent in our ontology in order to provide both casual users and computer programs with the most important knowledge about the topic. </p>
+<br>
+<p>
+Therefore, we selected the main point of interest for each character, the type of relationship among them and, in particular, the actual meaning behind each name.
+In fact, we chose to represent only the information about a sample of characters who appear more and have more interactions following our textual research. Moreover, we decided to give more space to the member of the the <i>Fellowship of the Ring</i>, a group of characters that have the mission to help the protagonist Frodo.</p>
+<br>
+<p>Then we chose to represent their names and their languages, because of the relevance of Tolkien’s linguistic studies. As we already said, the writer had a keen interest in linguistics and philology and, consequently in the wide meaning which lies beyond the surface of the words. Every noun in the text has a meaning and he created also entire languages in his literary works.</p>
+<br>
+
+<p>Another aspect that Tolkien developed very carefully was the geography of Middle-earth, namely, the fictional setting his main work. He created his imaginary continent very precisely, therefore we wanted to provide the user of our ontology with some information concerning the places where the characters live and act.
+Finally, we chose to represent also the weapons of the characters because of some of their name, meaningful and useful in our etymological analysis of <i>The Lord of the Rings </i>.
+</p>
+<br>
+<h2 id="ontologycreation">Structuring and Ontology creation</h2>
+<p>An ontology is capable of providing many benefits to various kinds of users. As a matter of fact, an ontology is useful to:</p>
+<ul>
+<li style="margin-left: 4%"><p>share common understanding of the domain and the related knowledge both among humans and machines;</p></li>
+<li style="margin-left: 4%"><p>reuse the gained knowledge in other projects without having to start from scratch every time;</p></li>
+<li style="margin-left: 4%"><p>broaden the knowledge about a specific domain or topic.</p></li>
+</ul>
+<br>
+<p>If one wants to know a scholar definition of ontology, he/she should take into consideration the one which was given by Gruber and Borst:
+</p>
+<br>
+<p style="margin-left: 4%; margin-right: 4%">«An ontology is a formal, explicit specification of a shared conceptualization. Conceptualization refers to an abstract model of some phenomenon in the world by having identified the relevant concepts of that phenomenon. Explicit means that the type of concepts used, and the constraints on their use are explicitly defined. Formal refers to the fact that the ontology should be machine-readable. Shared reflects that notion that an ontology captures consensual knowledge that is, it is not private of some individual, but accepted by a group.» 
+</p>
+<br>
+<p>Therefore, an ontology can be defined as a model which represents knowledge as a set of concepts within a domain. An ontology also captures the relationships between these concepts. An ontology is a form of knowledge management that captures the knowledge within an organization as a model. This model can then be queried by users to answer complex questions and display relationships across an enterprise.
+</p>
+<br>
+<h4 id="usefulontology">But how can an ontology be useful?</h4>
+<p>Today, people have access to more data in a single day than most people had access to in a lifetime in previous decades. The problem is that the data are found in many different forms and all of this information captured in many different formats makes it almost impossible to understand existing relationships between different data. Consequently, understanding the relationships occurring among these data is not an easy task at all.</p>
+<p>Data need to be represented in a format that allows these types of relationships to be understood.</p>
+<p>With an ontology you can capture data in a way that makes these relationships more visible. </p>
+<br>
+<p>The main aspect of ontologies concerns that their most important features are classes and relationships. To use our project to explain what is an ontology, we could take two classes as an example. Let’s take Character and Language. The relationships occurring between the two classes is “speaks”. Therefore, we can say that the instances contained in the class “Character” speak at least one language. This kind of relationship is known as “triple”, and it is based on a subject (Character), a predicate (speaks) and an object (Language). These results can then be merged together to provide a comprehensive view of the real world within an ontology.</p>
+<br>
+<a href="images/chart13.png">
+<img src="images/chart13.png" alt="chart13" class="responsive"/></a>
+<br>
+<p>Therefore, the ontology is a machine-readable abstract model of some phenomenons that can identify concepts. </p>
+<p>As far as our project is concerned, the knowledge that we chose to represent has been accepted by a broad group of people, because we based most of our research and the interpretation of our data on literatures, documents, technical information, provided by scholars and fans of the topic. </p>
+<p>However, an important point concerns the fact that our ideas of the topic can be different from the ones of other people, as there is not a single or correct way to model a domain.</p>
+<br>
+<p>In order for our knowledge to be shared with casual users and software agents, we needed it to be structured in a logic way that had also to be easily translated into a machine-readable code. We created a domain ontology with conceptualization of concepts (the concept of “name” in particular), relations and attributes belonging to a particular field of interest, namely, <i>The Lord of the Rings - The Fellowship of the Ring</i>, the first part of J. R. R. Tolkien’s most famous trilogy.</p>
+<p>The development of our ontology has been an iterative process, as we kept modifying everything at every step we made because new structures, new ideas and new relevant information kept arising. </p>
+<br>
+<p>In succession, for each of the character we analyzed, we defined some shared properties and, once we knew that we wanted to represent a certain relationship, we needed to find how to make it explicit through a subject-predicate-object relationship.</p>
+<br>
+<p>We reused existent ontology when it was possible and we created new properties when and were it was necessary.</p>
+<br>
+<p>The software that we used to create our ontology is the open-source ontology editor <a href="https://protege.stanford.edu/">Protégé</a>.</p>
+<br>
+<p>Our ontology contains classes and relationships.</p>
+<br>
+<h4 id="classes">Classes</h4>
+<p>We chose the classes that represent concepts (either physical/specific or abstract/conceptual). Then, we organized them in taxonomies to define a superclass- subclass hierarchy.</p>
+<p>The nesting represent the following top-down hierarchy</p>
+<ul>
+<li style="margin-left: 4%"><p>Character</li>
+<ul>
+<li style="margin-left: 8%"><p>Hobbit</li>
+<ul>
+<li style="margin-left: 12%"><p>Fallohide</li>
+<li style="margin-left: 12%"><p>Harfoot</li>
+<li style="margin-left: 12%"><p>Stoor</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Human</li>
+<li style="margin-left: 8%"><p>Elf</li>
+<ul>
+<li style="margin-left: 12%"><p>Vanyar</li>
+<li style="margin-left: 12%"><p>Noldor</li>
+<li style="margin-left: 12%"><p>Teleri</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Dwarf</li>
+<li style="margin-left: 8%"><p>Maiar</li>
+</ul>
+</li>
+<li style="margin-left: 4%"><p>Name</li>
+<li style="margin-left: 4%"><p>Language</li>
+<li style="margin-left: 4%"><p>Weapon</li>
+<ul>
+<li style="margin-left: 8%"><p>Axe</li>
+<li style="margin-left: 8%"><p>Sword</li>
+<li style="margin-left: 8%"><p>Staff</li>
+<li style="margin-left: 8%"><p>Bow</li>
+<li style="margin-left: 8%"><p>Ring</li>
+</ul>
+</li>
+<li style="margin-left: 4%"><p>Place</li>
+</ul>
+<br>
+<p>We decided that our focus had to be on the characters, so we defined the concept “Character” as a class, and then we created the subclasses from the sub-categories in which the characters are divided also in the text. In succession, we created the class “Name” since names’ etymology is a special point of interest in our project. Finally, we created the other classes: Place, Language and Weapon (with the internal sub-division by type that defined the subclasses). </p>
+<br>
+<p>After having created the classes, we disjointed them, so that an individual cannot be an instance of more than one of these classes. By doing so, we avoided the creation of different entities with the same name, even if they represent different individuals belonging to different classes, but we could have named them in the same way, only specifying in which classes they were.
+</p>
+<br>
+<a href="images/chart14.png">
+<img src="images/chart14.png" alt="chart14" class="responsive"/></a>
+<br>
+<h4 id="relationships">Relationships</h4>
+<p>We defined some relationships that associate concepts, usually verbs end up as relations between two concepts. We also defined some properties, they are: aspects, properties, features, characteristics, or parameters that objects can have. </p>
+<br>
+<p>Thanks to our textual and linguistic research and to the sequential interpretations, we defined some important relationships among concepts and we chose to represent them.
+For each relation we chose a name, one or more source concepts (Domain), one or more target concepts (Range), the cardinality (when we wanted to specify the number of individuals involved in the restriction) and the inverse name.</p>
+<p>We defined the relations, Object Properties, when the relationship is between two individuals, and the properties, Data Properties, when the relationship is between an individual and a primitive (String, Boolean, Integer and so on).</p>
+<p>Then we put together the properties in relation to their Domain and Range.</p>
+<br>
+<ul>
+<li style="margin-left: 4%"><p>Object properties</li>
+<ul>
+<li style="margin-left: 8%"><p>Character - Character</li>
+<ul>
+<li style="margin-left: 12%"><p>lotro:enemyOf &rarr; Identifies a negative relationship</li>
+<li style="margin-left: 12%"><p>lotro:friendOf &rarr; Identifies a positive relationship</li>
+<li style="margin-left: 12%"><p>lotro:uncleOf &rarr; Identifies a family relationship (uncle)</li>
+<li style="margin-left: 12%"><p>lotro:nephewOf &rarr; Identifies a family relationship (nephew)</li>
+<li style="margin-left: 12%"><p>lotro:adopt &rarr; Identifies a family relationship (adoption)</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Character - Name</li>
+<ul>
+<li style="margin-left: 12%"><p>foaf:family_name &rarr; Identifies the family name</li>
+<li style="margin-left: 12%"><p>foaf:name &rarr; Identifies the name</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Character - Weapon</li>
+<ul>
+<li style="margin-left: 12%"><p>lotro:hasWeapon &rarr; Identifies the weapon</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Character - Place</li>
+<ul>
+<li style="margin-left: 12%"><p>dcterms:Location &rarr; Identifies the location where the character lives</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Language - Name</li>
+<ul>
+<li style="margin-left: 12%"><p>foaf:name &rarr; Identifies the name</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Weapon - Name</li>
+<ul>
+<li style="margin-left: 12%"><p>foaf:name &rarr; Identifies the name</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Place - Name</li>
+<ul>
+<li style="margin-left: 12%"><p>foaf:name &rarr; Identifies the name</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Place - Character</li>
+<ul>
+<li style="margin-left: 12%"><p>lotro:inhabitants &rarr; Identifies the inhabitants</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Character - Language</li>
+<ul>
+<li style="margin-left: 12%"><p>lotro:speaks &rarr; Identifies the language that is spoken</span></li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Language - Place</li>
+<ul>
+<li style="margin-left: 12%"><p>lotro:spokenIn &rarr; Identifies the place where a language is spoken</span></li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Language - Character</li>
+<ul>
+<li style="margin-left: 12%"><p>lotro:spokenBy &rarr; Identifies the speakers</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+	<br>
+<li style="margin-left: 4%"><p>Data properties</li>
+<ul>
+<li style="margin-left: 8%"><p>Character - xsd:string</li>
+<ul>
+<li style="margin-left: 12%"><p>foaf:member &rarr; Identifies the group or an agent that is member of that group</li>
+<li style="margin-left: 12%"><p>core:dateOfBirth &rarr; Identifies the date of birth</li>
+<li style="margin-left: 12%"><p>core:dateOfDeath &rarr; Identifies the date of death</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Name - xsd:string</li>
+<ul>
+<li style="margin-left: 12%"><p>lotro:isWrittenAs &rarr; Identifies the spelling</li>
+<li style="margin-left: 12%"><p>lotro:hasEtimology &rarr; Identifies the etymology</li>
+<li style="margin-left: 12%"><p>lotro:means &rarr; Identifies the meaning with a definition</li>
+</ul>
+</li>
+<li style="margin-left: 8%"><p>Character - URI</li>
+<ul>
+<li style="margin-left: 12%"><p>owl:SameAs &rarr; points to an URI identifying the same individual</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<p>A relation in particular, namely, the one which regards the names, involves all the classes as domains, because in the Tolkien’s universe all the names have a particular meaning and it was one of our main point of interest. 
+</p>
+<br>
+<p style="font-family:courier; margin-left: 4%">foaf:name → Domain: all classes </p>
+<p style="font-family:courier; margin-left: 4%">Range: Name</p>
+<br>
+<p>We also put some restrictions in the cardinality of the object property Speaks. As a matter of fact, the declaration “Speaks min 1” denotes that the individuals of class Character, which are related to other individuals of the class Language by the Speaks relationship, have at least one location. It does not impose any constraint in the individuals who do not have the relation Speaks, but if there are any who have it, then they must speak at least one Language.</p>
+<br>
+<h4 id="instances">Instances</h4>
+<p>Finally, we created some elements or individuals, the instances that, in an ontology, represent objects in the domain in which we are interested.</p>
+<p>We created some individuals for each class and we defined some formal axioms, to model sentences that are always true, giving properties and values to each individual.
+Some individuals of the class Characters are: Frodo, Samwise, Bilbo, Aragorn, Peregrin, Meriadoc, Aragorn, Gandalf, Sauron, Saruman, Gimli and Legolas. Then, for each of them we defined an instance of the class Name, then we filled our ontology with all the information we thought that would have been useful for the user of our ontology. 
+</p>
+<br>
+<h4 id="simplifiedschema">A simplified schema of our ontology</h4>
+<br>
+<a href="images/chart15.png">
+<img src="images/chart15.png" alt="chart15" class="responsive"/></a>
+<br>
+<h4 id="someindividuals">Some of our individuals</h4>
+<br>
+<table style="width: 470.9px;">
+<tbody>
+<tr style="height: 42px;">
+<td style="height: 42px; width: 452.9px;" colspan="2">
+<p><strong>FRODO</strong></p>
+</td>
+</tr>
+<tr style="height: 59px;">
+<td style="height: 59px; width: 190px;">
+<p><span style="font-weight: 400;">lotro:hasWeapon</span></p>
+</td>
+<td style="height: 59px; width: 262.9px;">
+<p><span style="font-weight: 400;">Sting</span></p>
+</td>
+</tr>
+<tr style="height: 58px;">
+<td style="height: 58px; width: 190px;">
+<p><span style="font-weight: 400;">dcterms:Location</span></p>
+</td>
+<td style="height: 58px; width: 262.9px;">
+<p><span style="font-weight: 400;">TheShire</span></p>
+</td>
+</tr>
+<tr style="height: 62px;">
+<td style="height: 62px; width: 190px;">
+<p><span style="font-weight: 400;">foaf:family_name</span></p>
+</td>
+<td style="height: 62px; width: 262.9px;">
+<p><span style="font-weight: 400;">Baggings_NAME</span></p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="height: 61px; width: 190px;">
+<p><span style="font-weight: 400;">foaf:name</span></p>
+</td>
+<td style="height: 61px; width: 262.9px;">
+<p><span style="font-weight: 400;">FRODO_NAME</span></p>
+</td>
+</tr>
+<tr style="height: 66px;">
+<td style="height: 66px; width: 190px;">
+<p><span style="font-weight: 400;">lotro:enemyOf&nbsp;</span></p>
+</td>
+<td style="height: 66px; width: 262.9px;">
+<p><span style="font-weight: 400;">SAURON</span></p>
+</td>
+</tr>
+<tr style="height: 66px;">
+<td style="height: 66px; width: 190px;">
+<p><span style="font-weight: 400;">lotro:friendOf</span></p>
+</td>
+<td style="height: 66px; width: 262.9px;">
+<p><span style="font-weight: 400;">SAM, GANDALF, </span><span style="font-weight: 400;">BILBO</span></p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="height: 61px; width: 190px;">
+<p><span style="font-weight: 400;">lotro:speaks</span></p>
+</td>
+<td style="height: 61px; width: 262.9px;">
+<p><span style="font-weight: 400;">Westron; Sindarin</span></p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="height: 61px; width: 190px;">
+<p><span style="font-weight: 400;">lotro:nephewOf</span></p>
+</td>
+<td style="height: 61px; width: 262.9px;">
+<p><span style="font-weight: 400;">BILBO</span></p>
+</td>
+</tr>
+<tr style="height: 59.4px;">
+<td style="height: 59.4px; width: 190px;">
+<p><span style="font-weight: 400;">core:dateOfBirth</span></p>
+</td>
+<td style="height: 59.4px; width: 262.9px;">
+<p><span style="font-weight: 400;">&lsquo;22 September, T.A. 2968&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 46px;">
+<td style="height: 46px; width: 190px;">
+<p><span style="font-weight: 400;">foaf:member</span></p>
+</td>
+<td style="height: 46px; width: 262.9px;">
+<p><span style="font-weight: 400;">&lsquo;The Fellowship of the Ring&rsquo;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<table style="width: 520.25px;">
+<tbody>
+<tr style="height: 50px;">
+<td style="width: 502.25px; height: 50px;" colspan="2">
+<p><strong>FRODO_NAME</strong><span style="font-weight: 400;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="width: 148px; height: 61px;">
+<p><span style="font-weight: 400;">lotro:isWrittenAs</span></p>
+</td>
+<td style="width: 354.25px; height: 61px;">
+<p><span style="font-weight: 400;">&lsquo;Frodo&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 60.8px;">
+<td style="width: 148px; height: 60.8px;">
+<p><span style="font-weight: 400;">lotro:hasEtimology</span></p>
+</td>
+<td style="width: 354.25px; height: 60.8px;">
+<p><span style="font-weight: 400;">&lsquo;Frod - Anglosaxon&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 46px;">
+<td style="width: 148px; height: 46px;">
+<p><span style="font-weight: 400;">lotro:means</span></p>
+</td>
+<td style="width: 354.25px; height: 46px;">
+<p><span style="font-weight: 400;">&lsquo;wise by experience, a good sense of judgement&rsquo;&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<table style="width: 504.35px;">
+<tbody>
+<tr style="height: 46px;">
+<td style="width: 486.35px; height: 46px;" colspan="2">
+<p><strong>BAGGINS_NAME</strong><span style="font-weight: 400;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="height: 59px;">
+<td style="width: 172px; height: 59px;">
+<p><span style="font-weight: 400;">lotro:isWrittenAs</span></p>
+</td>
+<td style="width: 314.35px; height: 59px;">
+<p><span style="font-weight: 400;">&lsquo;Baggings&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 63px;">
+<td style="width: 172px; height: 63px;">
+<p><span style="font-weight: 400;">lotro:hasEtimology</span></p>
+</td>
+<td style="width: 314.35px; height: 63px;">
+<p><span style="font-weight: 400;">&lsquo;Bagging - Northern English&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 46px;">
+<td style="width: 172px; height: 46px;">
+<p><span style="font-weight: 400;">lotro:means</span></p>
+</td>
+<td style="width: 314.35px; height: 46px;">
+<p><span style="font-weight: 400;">&lsquo;eating between meals, the end of a bag&rsquo;&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<table style="width: 244.3px;">
+<tbody>
+<tr style="height: 57.6px;">
+<td style="width: 227.3px; height: 57.6px;" colspan="2">
+<p><strong>Sting</strong></p>
+</td>
+</tr>
+<tr style="height: 46px;">
+<td style="width: 105px; height: 46px;">
+<p><span style="font-weight: 400;">foaf:name</span></p>
+</td>
+<td style="width: 122.3px; height: 46px;">
+<p><span style="font-weight: 400;">Sting_name</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<table style="width: 307.883px;">
+<tbody>
+<tr style="height: 46px;">
+<td style="width: 289.883px; height: 46px;" colspan="2">
+<p><strong>TheShire</strong></p>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td style="width: 157px; height: 70px;">
+<p><span style="font-weight: 400;">foaf:name</span></p>
+</td>
+<td style="width: 132.883px; height: 70px;">
+<p><span style="font-weight: 400;">TheShire_name</span></p>
+</td>
+</tr>
+<tr style="height: 65.8px;">
+<td style="width: 157px; height: 65.8px;">
+<p><span style="font-weight: 400;">lotro:Inhabitants</span></p>
+</td>
+<td style="width: 132.883px; height: 65.8px;">
+<p><span style="font-weight: 400;">&lsquo;Hobbits&rsquo;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<table style="width: 561px;">
+<tbody>
+<tr style="height: 46px;">
+<td style="width: 544px; height: 46px;" colspan="2">
+<p><strong>Westron</strong></p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="width: 182.567px; height: 61px;">
+<p><span style="font-weight: 400;">foaf:name</span></p>
+</td>
+<td style="width: 361.433px; height: 61px;">
+<p><span style="font-weight: 400;">Westron_name</span></p>
+</td>
+</tr>
+<tr style="height: 61.8px;">
+<td style="width: 182.567px; height: 61.8px;">
+<p><span style="font-weight: 400;">lotro:spokenIn</span></p>
+</td>
+<td style="width: 361.433px; height: 61.8px;">
+<p><span style="font-weight: 400;">TheShire_place</span></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td style="width: 182.567px; height: 64px;">
+<p><span style="font-weight: 400;">lotro:spokenBy</span></p>
+</td>
+<td style="width: 361.433px; height: 64px;">
+<p><span style="font-weight: 400;">Frodo_fellohide, Sam_hairfoot, Gandalf_maiar, Bilbo_fellohide</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<table style="width: 347.567px;">
+<tbody>
+<tr style="height: 46px;">
+<td style="width: 330.567px; height: 46px;" colspan="2">
+<p><strong>Sindarin</strong></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td style="width: 172px; height: 64px;">
+<p><span style="font-weight: 400;">foaf:name</span></p>
+</td>
+<td style="width: 158.567px; height: 64px;">
+<p><span style="font-weight: 400;">Sindarin_name</span></p>
+</td>
+</tr>
+<tr style="height: 63px;">
+<td style="width: 172px; height: 63px;">
+<p><span style="font-weight: 400;">lotro:spokenIn</span></p>
+</td>
+<td style="width: 158.567px; height: 63px;">
+<p><span style="font-weight: 400;">Arda_place</span></p>
+</td>
+</tr>
+<tr style="height: 63px;">
+<td style="width: 172px; height: 63px;">
+<p><span style="font-weight: 400;">lotro:spokenBy</span></p>
+</td>
+<td style="width: 158.567px; height: 63px;">
+<p><span style="font-weight: 400;">Gandalf_maiar</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<table style="width: 502px;">
+<tbody>
+<tr style="height: 46px;">
+<td style="width: 484px; height: 46px;" colspan="2">
+<p><strong>Sting_name</strong></p>
+</td>
+</tr>
+<tr style="height: 65px;">
+<td style="width: 190.367px; height: 65px;">
+<p><span style="font-weight: 400;">lotro:isWrittenAs</span></p>
+</td>
+<td style="width: 293.633px; height: 65px;">
+<p><span style="font-weight: 400;">&lsquo;Sting&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td style="width: 190.367px; height: 70px;">
+<p><span style="font-weight: 400;">lotro:hasEtimology</span></p>
+</td>
+<td style="width: 293.633px; height: 70px;">
+<p><span style="font-weight: 400;">&lsquo;stincg, steng - Anglosaxon&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 69.2px;">
+<td style="width: 190.367px; height: 69.2px;">
+<p><span style="font-weight: 400;">lotro:means</span></p>
+</td>
+<td style="width: 293.633px; height: 69.2px;">
+<p><span style="font-weight: 400;">&lsquo;act of stinging, puncture, thrust&rsquo;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<table style="width: 482px;">
+<tbody>
+<tr style="height: 46px;">
+<td style="width: 465px; height: 46px;" colspan="2">
+<p><strong>TheShire_name</strong></p>
+</td>
+</tr>
+<tr style="height: 71px;">
+<td style="width: 183.95px; height: 71px;">
+<p><span style="font-weight: 400;">lotro:isWrittenAs</span></p>
+</td>
+<td style="width: 281.05px; height: 71px;">
+<p><strong>&lsquo;</strong><span style="font-weight: 400;">The Shire</span><strong>&rsquo;</strong></p>
+</td>
+</tr>
+<tr style="height: 68px;">
+<td style="width: 183.95px; height: 68px;">
+<p><span style="font-weight: 400;">lotro:hasEtimology</span></p>
+</td>
+<td style="width: 281.05px; height: 68px;">
+<p><span style="font-weight: 400;">&lsquo;scira - Old High German&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 70.6px;">
+<td style="width: 183.95px; height: 70.6px;">
+<p><span style="font-weight: 400;">lotro:means</span></p>
+</td>
+<td style="width: 281.05px; height: 70.6px;">
+<p><span style="font-weight: 400;">&lsquo;district, province, country&rsquo;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<table style="width: 444px;">
+<tbody>
+<tr style="height: 46px;">
+<td style="width: 427px; height: 46px;" colspan="2">
+<p><strong>Westron_name</strong></p>
+</td>
+</tr>
+<tr style="height: 73px;">
+<td style="width: 198.95px; height: 73px;">
+<p><span style="font-weight: 400;">lotro:isWrittenAs</span></p>
+</td>
+<td style="width: 228.05px; height: 73px;">
+<p><span style="font-weight: 400;">&lsquo;Westron&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="width: 198.95px; height: 67px;">
+<p><span style="font-weight: 400;">lotro:hasEtimology</span></p>
+</td>
+<td style="width: 228.05px; height: 67px;">
+<p><span style="font-weight: 400;">&lsquo;Ad&ucirc;naic Ad&ucirc;n - N&uacute;men&oacute;rean&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 62.2px;">
+<td style="width: 198.95px; height: 62.2px;">
+<p><span style="font-weight: 400;">lotro:means</span></p>
+</td>
+<td style="width: 228.05px; height: 62.2px;">
+<p><span style="font-weight: 400;">&lsquo;Language of the West&rsquo;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="width: 414px;">
+<tbody>
+<tr style="height: 46px;">
+<td style="width: 397px; height: 46px;" colspan="2">
+<p><strong>Sindarin_name</strong></p>
+</td>
+</tr>
+<tr style="height: 67px;">
+<td style="width: 216.95px; height: 67px;">
+<p><span style="font-weight: 400;">lotro:isWrittenAs</span></p>
+</td>
+<td style="width: 180.05px; height: 67px;">
+<p><span style="font-weight: 400;">&lsquo;Sindarin&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td style="width: 216.95px; height: 64px;">
+<p><span style="font-weight: 400;">lotro:hasEtimology</span></p>
+</td>
+<td style="width: 180.05px; height: 64px;">
+<p><span style="font-weight: 400;">&lsquo;Sindar - Quenya&rsquo;</span></p>
+</td>
+</tr>
+<tr style="height: 63px;">
+<td style="width: 216.95px; height: 63px;">
+<p><span style="font-weight: 400;">lotro:means</span></p>
+</td>
+<td style="width: 180.05px; height: 63px;">
+<p><span style="font-weight: 400;">&lsquo;Grey Elivsh language&rsquo;&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+<h2 id="publicationandvisualization">Publication and visualization of our ontology</h2>
+<br>
+<p>After having created and edited the definitive version of LOTRO Ontology, we decided that we needed to represent it in a way that was both nice to see and easy to consult. Widoco, WebVOWL and RDF Grapher were the three tools that we found and that were able to satisfy our necessity. </p>
+<br>
+<p>Widoco is a step by step generator of HTML templates with the documentation of the ontology. It helps you to publish and create an enriched and customized documentation of your ontology by following a series of steps in a wizard. The result of running our ontology with Widoco can be seen <a href="https://lotro.github.io/MyDocumentation/index-en.html">here</a>.
+</p>
+<br>
+<p>WebVOWL is a web application for the interactive visualization of ontologies. It implements the Visual Notation for OWL Ontologies (VOWL) by providing graphical depictions for elements of the Web Ontology Language (OWL) that are combined to a force-directed graph layout representing the ontology. Interaction techniques allow to explore the ontology and to customize the visualization. The VOWL visualizations are automatically generated from JSON files into which the ontologies need to be converted. A Java-based OWL2VOWL converter is provided along with WebVOWL.</p>
+<p>This is the result of uploading our ontology to the WebVOWL tool:</p>
+<br>
+<iframe align="center" width="100%" height ="450px" src="https://lotro.github.io/MyDocumentation/webvowl/index.html"></iframe>
+<br>
+<br>
+<p>RDF Grapher is a web service for parsing RDF data and visualizing it as a graph. We exported our ontology as a Turtle file (ttl), a coding language that can be read by the grapher. The result is a huge graph, and can be downloaded <a href="https://drive.google.com/open?id=14PrlQBKowZf0Djz1G0Dl6cjnO290qvTi">here</a>.</p>
+<br>
+<p>You can even see and analyze the XML/OWL code of our ontology by clicking <a href="https://lotro.github.io/LOTROXMLOWL.owl">here</a></p>
+<h2 id="conclusions">Conclusions</h2>
+<br>
+<p>With this project, we discovered that in <I>The Lord of the Rings</I> we never have phenomena such as the homonymy, something that no one ever noticed so far. That is because Tolkien created every single name after a very broad and detailed philological and linguistic analysis: every character, as a matter of fact, have their own personality which is often derived by the name he/she carries.</p>
+<br>
+<p>Furthermore, we noticed that many topics could be developed a studied in a broader way; Tolkien’s universe is huge and the more one studies it, the more one finds out other aspects that would be worth examining in depth.</p>
+<br>
+<p>However, the final outcome of our research and implementation concerns the creation of an ontology able to share our knowledge with other users that could be interested in the topics we covered. Everything we created is open source and can be reused by everyone else. We made everything we did available, from the OWL files we used to the Python code we wrote.</p>
+<br>
+<p>As we pointed out formerly, we took just a sample of characters related to the first book of the trilogy only. Consequently, we are aware of the fact and we state that our ontology could be further developed to get a thorough view of the topic.</p>
+<br>
+<h2 id="bibliographyandsitography">Bibliography and Sitography</h2>
+<li style="margin-left: 4%"><p>Carpenter Humphrey, <i>J R.R: Tolkien – La biografia</i>, Fanucci Editore, Roma, 2002.
+<li style="margin-left: 4%"><p>Ellen Rose Fisher, <i>An analysis of Tolkien’s use of Old English language to create the personal names of key characters in The Lord of the Rings and the significance of these linguistic choices in regards to character development and the discussion of humanity in the novel more widely</i>, Innervate, Nottingham University, Online journal publication, 2014,
+<li style="margin-left: 4%"><p>Eric T. Nalisnick Henry S. Baird, <i>Character-to-Character Sentiment Analysis in Shakespeare’s Plays</i>, Dept. of Computer Science and Engineering Lehigh University, Bethlehem, PA 18015, USA, 2013
+<li style="margin-left: 4%"><p>Henry Baird, H. S. Baird, H. Baird, K. S. Baird, <i>Extracting Sentiment Networks from Shakespeare's Plays</i>, 2013
+<li style="margin-left: 4%"><p>Julita Bermejo, <i>A Simplified Guide to Create an Ontology</i>, Universidad politécnica de Madrid, May 2007
+<li style="margin-left: 4%"><p><i><a href="http://tolkiengateway.net/wiki/Main_Page">Tolkien Gateway</a>, the J. R.R. Tolkien Encyclopedia</i>
+
+
+
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,2852 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology">
+    <Prefix name="" IRI="https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Axe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dwarf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fallohide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Harfoot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hobbit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maiar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noldor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stoor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teleri"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vanyar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weapon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#adopt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#adoptedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cousinOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enemyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#friendOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWeapon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inhabitant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nephewOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#speaks"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#spokenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#spokenIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uncleOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEtimology"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isWrittenAs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#means"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#core:dateOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#core:dateOfDeath"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andúril"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andúril_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aragorn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aragorn_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baggins_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bilbo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bilbo_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Black_Speech"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Boromir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Boromir_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bow_of_Lórien"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brandybuck_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Broad_bladed_axe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dagger_Of_Westernesse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Erebor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Erebor_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frodo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frodo_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gamgee_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gandalf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gandalf_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gimli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gimli_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Glamdring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Glamdring_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gondor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gondor_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Khuzdul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Khuzdul_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Legolas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Legolas_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meriadoc_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mordor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mordor_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Narya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Narya_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peregrin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peregrin_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quenya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quenya_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Samwise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Samwise_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sauron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sauron_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sindarin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sindarin_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sting_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_One_Ring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Shire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Shire_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Took_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Westron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Westron_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wizard_Staff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Woodland_Realm"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Axe"/>
+        <Class IRI="#Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bow"/>
+        <Class IRI="#Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dwarf"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elf"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fallohide"/>
+        <Class IRI="#Hobbit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harfoot"/>
+        <Class IRI="#Hobbit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hobbit"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maiar"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noldor"/>
+        <Class IRI="#Elf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ring"/>
+        <Class IRI="#Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff"/>
+        <Class IRI="#Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stoor"/>
+        <Class IRI="#Hobbit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sword"/>
+        <Class IRI="#Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teleri"/>
+        <Class IRI="#Elf"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vanyar"/>
+        <Class IRI="#Elf"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Axe"/>
+        <Class IRI="#Bow"/>
+        <Class IRI="#Ring"/>
+        <Class IRI="#Staff"/>
+        <Class IRI="#Sword"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Character"/>
+        <Class IRI="#Language"/>
+        <Class IRI="#Name"/>
+        <Class IRI="#Place"/>
+        <Class IRI="#Weapon"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Sword"/>
+        <NamedIndividual IRI="#Andúril"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Andúril_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Aragorn_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Baggins_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fallohide"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Bilbo_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Black_Speech"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Human"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Boromir_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bow"/>
+        <NamedIndividual IRI="#Bow_of_Lórien"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Brandybuck_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Axe"/>
+        <NamedIndividual IRI="#Broad_bladed_axe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sword"/>
+        <NamedIndividual IRI="#Dagger_Of_Westernesse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Place"/>
+        <NamedIndividual IRI="#Erebor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Erebor_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fallohide"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Frodo_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Gamgee_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Maiar"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Gandalf_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dwarf"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Gimli_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sword"/>
+        <NamedIndividual IRI="#Glamdring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Glamdring_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Place"/>
+        <NamedIndividual IRI="#Gondor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Gondor_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Khuzdul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Khuzdul_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teleri"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Legolas_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fallohide"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Meriadoc_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Place"/>
+        <NamedIndividual IRI="#Mordor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Mordor_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ring"/>
+        <NamedIndividual IRI="#Narya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Narya_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fallohide"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Peregrin_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Quenya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Quenya_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Harfoot"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Samwise_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Maiar"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Sauron_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Sindarin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Sindarin_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sword"/>
+        <NamedIndividual IRI="#Sting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Sting_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sword"/>
+        <NamedIndividual IRI="#Sword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ring"/>
+        <NamedIndividual IRI="#The_One_Ring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Place"/>
+        <NamedIndividual IRI="#The_Shire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#The_Shire_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Took_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Name"/>
+        <NamedIndividual IRI="#Westron_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="#Wizard_Staff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Place"/>
+        <NamedIndividual IRI="#Woodland_Realm"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Andúril"/>
+        <NamedIndividual IRI="#Andúril_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Aragorn_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Quenya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Sindarin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#The_Shire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#Baggins_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#Bilbo_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adopt"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#Sting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#Sindarin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#uncleOf"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Black_Speech"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenIn"/>
+        <NamedIndividual IRI="#Black_Speech"/>
+        <NamedIndividual IRI="#Mordor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Gondor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Boromir_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Sword"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Erebor"/>
+        <NamedIndividual IRI="#Erebor_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inhabitant"/>
+        <NamedIndividual IRI="#Erebor"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#The_Shire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Baggins_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Frodo_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adoptedBy"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Sting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#The_One_Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nephewOf"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Sindarin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Gandalf_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Glamdring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Narya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Wizard_Staff"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Khuzdul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Quenya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Sindarin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Gimli_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Broad_bladed_axe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Khuzdul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Glamdring"/>
+        <NamedIndividual IRI="#Glamdring_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Gondor"/>
+        <NamedIndividual IRI="#Gondor_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inhabitant"/>
+        <NamedIndividual IRI="#Gondor"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Khuzdul"/>
+        <NamedIndividual IRI="#Khuzdul_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Khuzdul"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Khuzdul"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenIn"/>
+        <NamedIndividual IRI="#Khuzdul"/>
+        <NamedIndividual IRI="#Erebor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Woodland_Realm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Legolas_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Bow_of_Lórien"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Quenya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Sindarin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#The_Shire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Brandybuck_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Meriadoc_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cousinOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Dagger_Of_Westernesse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Mordor"/>
+        <NamedIndividual IRI="#Mordor_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inhabitant"/>
+        <NamedIndividual IRI="#Mordor"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Narya"/>
+        <NamedIndividual IRI="#Narya_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#The_Shire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Took_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Peregrin_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cousinOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Dagger_Of_Westernesse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Quenya"/>
+        <NamedIndividual IRI="#Quenya_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Quenya"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Quenya"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Quenya"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenIn"/>
+        <NamedIndividual IRI="#Quenya"/>
+        <NamedIndividual IRI="#Woodland_Realm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#The_Shire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Gamgee_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Samwise_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Sauron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friendOf"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Sting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <NamedIndividual IRI="#Westron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Mordor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Sauron_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Aragorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Boromir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Gimli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enemyOf"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#The_One_Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#speaks"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <NamedIndividual IRI="#Black_Speech"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Sindarin"/>
+        <NamedIndividual IRI="#Sindarin_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Sindarin"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Sindarin"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Sting"/>
+        <NamedIndividual IRI="#Sting_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#The_Shire"/>
+        <NamedIndividual IRI="#The_Shire_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inhabitant"/>
+        <NamedIndividual IRI="#The_Shire"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inhabitant"/>
+        <NamedIndividual IRI="#The_Shire"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inhabitant"/>
+        <NamedIndividual IRI="#The_Shire"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inhabitant"/>
+        <NamedIndividual IRI="#The_Shire"/>
+        <NamedIndividual IRI="#Peregrin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inhabitant"/>
+        <NamedIndividual IRI="#The_Shire"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <NamedIndividual IRI="#Westron"/>
+        <NamedIndividual IRI="#Westron_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Westron"/>
+        <NamedIndividual IRI="#Bilbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Westron"/>
+        <NamedIndividual IRI="#Frodo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Westron"/>
+        <NamedIndividual IRI="#Gandalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenBy"/>
+        <NamedIndividual IRI="#Westron"/>
+        <NamedIndividual IRI="#Samwise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#spokenIn"/>
+        <NamedIndividual IRI="#Westron"/>
+        <NamedIndividual IRI="#The_Shire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inhabitant"/>
+        <NamedIndividual IRI="#Woodland_Realm"/>
+        <NamedIndividual IRI="#Legolas"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Andúril_name"/>
+        <Literal>andúnë + ril (Quenya)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Andúril_name"/>
+        <Literal>Andúril</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Andúril_name"/>
+        <Literal>Flame of the West</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:sameAs"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Aragorn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <Literal>The Fellowship of the Ring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <Literal>1 March T.A. 2931</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <NamedIndividual IRI="#Aragorn"/>
+        <Literal>Fo.A. 120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Aragorn_name"/>
+        <Literal>Aran + gorn (Sindarin)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Aragorn_name"/>
+        <Literal>Aragorn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Aragorn_name"/>
+        <Literal>Revered King</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Baggins_name"/>
+        <Literal>Bagging (Northern English)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Baggins_name"/>
+        <Literal>Baggins</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Baggins_name"/>
+        <Literal>eating between meals, the end of a bag</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <Literal>22 September T.A. 2890</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <NamedIndividual IRI="#Bilbo"/>
+        <Literal>Unknown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Bilbo_name"/>
+        <Literal>bil + bó/bá (Anglosaxon)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Bilbo_name"/>
+        <Literal>Bilbo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Bilbo_name"/>
+        <Literal>cut-and-thrust sword</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <Literal>The Fellowship of the Ring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <Literal>T.A. 2978</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <NamedIndividual IRI="#Boromir"/>
+        <Literal>February 26, T.A. 3019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Boromir_name"/>
+        <Literal>Bôr + Mírë (Sindarin + Quenya)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Boromir_name"/>
+        <Literal>Boromir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Boromir_name"/>
+        <Literal>Trusty man + precious thing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Brandybuck_name"/>
+        <Literal>Brandagamba (Westron)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Brandybuck_name"/>
+        <Literal>Brandybuck</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Brandybuck_name"/>
+        <Literal>Border-water + male deer or ram</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Erebor_name"/>
+        <Literal>Ereb + or(od) (Sindarin)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Erebor_name"/>
+        <Literal>Erebor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Erebor_name"/>
+        <Literal>Lonely Mountain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:sameAs"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Frodo_Baggins</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <Literal>The Fellowship of the Ring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <Literal>22 September, T.A. 2968</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <NamedIndividual IRI="#Frodo"/>
+        <Literal>Unknown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Frodo_name"/>
+        <Literal>Frod (Anglosaxon)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Frodo_name"/>
+        <Literal>Frodo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Frodo_name"/>
+        <Literal>Wise by experience</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Gamgee_name"/>
+        <Literal>Gamgee (Contemporary English)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Gamgee_name"/>
+        <Literal>Gamgee</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Gamgee_name"/>
+        <Literal>Cotton wool</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:sameAs"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Gandalf</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <Literal>The Fellowship of the Ring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <Literal>Unknown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <NamedIndividual IRI="#Gandalf"/>
+        <Literal>Unknown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Gandalf_name"/>
+        <Literal>gandr + álfr (Old Norse)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Gandalf_name"/>
+        <Literal>Gandalf</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Gandalf_name"/>
+        <Literal>Wand elf</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <Literal>The Fellowship of the Ring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <NamedIndividual IRI="#Gimli"/>
+        <Literal>T.A. 2879</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Gimli_name"/>
+        <Literal>Gimm (Old Norse)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Gimli_name"/>
+        <Literal>Gimli</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Gimli_name"/>
+        <Literal>Fire</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Glamdring_name"/>
+        <Literal>glam + dring (Westron)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Glamdring_name"/>
+        <Literal>Glamdring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Glamdring_name"/>
+        <Literal>foe-hammer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Gondor_name"/>
+        <Literal>gond + (n)dor (Sindarin)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Gondor_name"/>
+        <Literal>Gondor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Gondor_name"/>
+        <Literal>Stone-land</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Khuzdul_name"/>
+        <Literal>Khuzd (Khuzdul)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Khuzdul_name"/>
+        <Literal>Khuzdul</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Khuzdul_name"/>
+        <Literal>Dwarves</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#Legolas"/>
+        <Literal>The Fellowship of the Ring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Legolas_name"/>
+        <Literal>Laeg + golas (Sindarin)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Legolas_name"/>
+        <Literal>Legolas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Legolas_name"/>
+        <Literal>Green foliage</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <Literal>The Fellowship of the Ring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <Literal>Early S.R. 1382</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <NamedIndividual IRI="#Meriadoc"/>
+        <Literal>After S.R. 1484</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Meriadoc_name"/>
+        <Literal>Mawr + Udd (Welsh)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Meriadoc_name"/>
+        <Literal>Meriadoc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Meriadoc_name"/>
+        <Literal>Great Lord</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Mordor_name"/>
+        <Literal>mor + dôr (Sindarin)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Mordor_name"/>
+        <Literal>Mordor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Mordor_name"/>
+        <Literal>The Black Land</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Narya_name"/>
+        <Literal>Fiery red</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Narya_name"/>
+        <Literal>narwa + ya (Quenya)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Narya_name"/>
+        <Literal>Narya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <Literal>The Fellowship of the Ring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <Literal>Spring T.A. 2990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <NamedIndividual IRI="#Peregrin"/>
+        <Literal>After Fo.A. 63</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Peregrin_name"/>
+        <Literal>Pelegrinus (Latin)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Peregrin_name"/>
+        <Literal>Peregrin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Peregrin_name"/>
+        <Literal>Wanderer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Quenya_name"/>
+        <Literal>Kwene (primitive Quendian)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Quenya_name"/>
+        <Literal>Quenya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Quenya_name"/>
+        <Literal>Person</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="owl:sameAs"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Samwise_Gamgee</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <Literal>The Fellowship of the Ring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <Literal>6 April T.A. 2980</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <NamedIndividual IRI="#Samwise"/>
+        <Literal>Unknown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Samwise_name"/>
+        <Literal>samwís (Anglosaxon)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Samwise_name"/>
+        <Literal>Samwise</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Samwise_name"/>
+        <Literal>Simple minded</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <Literal>Unknown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <NamedIndividual IRI="#Sauron"/>
+        <Literal>25 March T.A. 3019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Sauron_name"/>
+        <Literal>saura (Sindarin)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Sauron_name"/>
+        <Literal>Sauron</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Sauron_name"/>
+        <Literal>Foul, putrid, evil-smelling</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Sindarin_name"/>
+        <Literal>Sindar (Quenya)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Sindarin_name"/>
+        <Literal>Sindarin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Sindarin_name"/>
+        <Literal>Grey Elivsh language</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Sting_name"/>
+        <Literal>stincg, steng (Anglosaxon)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Sting_name"/>
+        <Literal>Sting</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Sting_name"/>
+        <Literal>Act of stinging, puncture, thrust</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#The_Shire_name"/>
+        <Literal>scira (Old High German)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#The_Shire_name"/>
+        <Literal>The Shire</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#The_Shire_name"/>
+        <Literal>District, province, country</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Took_name"/>
+        <Literal>Tûk (Westron)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Took_name"/>
+        <Literal>Took</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Took_name"/>
+        <Literal>Daring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEtimology"/>
+        <NamedIndividual IRI="#Westron_name"/>
+        <Literal>Adûnaic Adûn (Númenórean)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isWrittenAs"/>
+        <NamedIndividual IRI="#Westron_name"/>
+        <Literal>Westron</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#means"/>
+        <NamedIndividual IRI="#Westron_name"/>
+        <Literal>Language of the West</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#adopt"/>
+        <ObjectProperty IRI="#adoptedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#nephewOf"/>
+        <ObjectProperty IRI="#uncleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#speaks"/>
+        <ObjectProperty IRI="#spokenBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class IRI="#Weapon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#adopt"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#adoptedBy"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cousinOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#enemyOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#friendOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inhabitant"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nephewOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#speaks"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#spokenBy"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#spokenIn"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uncleOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/dc/terms/Location"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/family_name"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#adopt"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#adoptedBy"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cousinOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#enemyOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#friendOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWeapon"/>
+        <Class IRI="#Weapon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inhabitant"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nephewOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#speaks"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#speaks"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#speaks"/>
+            <Class IRI="#Language"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#spokenBy"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#spokenIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#uncleOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:sameAs"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEtimology"/>
+        <Class IRI="#Name"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isWrittenAs"/>
+        <Class IRI="#Name"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#means"/>
+        <Class IRI="#Name"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:sameAs"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEtimology"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isWrittenAs"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#means"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#core:dateOfBirth"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#core:dateOfDeath"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Andúril</IRI>
+        <Literal>Andúril was the name for the sword Narsil after its reforging in Third Age 3018 for Aragorn, the heir of Isildur.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Axe</IRI>
+        <Literal xml:lang="en">Axe is a kind of weapon favoured by the Dwarves and few Elves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Axe</IRI>
+        <IRI>#Axe</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Axe</IRI>
+        <Literal xml:lang="en">Axe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Black_Speech</IRI>
+        <Literal>The Black Speech was created by Sauron during the Dark Years to be the sole language of all the servants of Mordor, replacing the many different varieties of Orkish and other languages used by his servants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bow</IRI>
+        <Literal xml:lang="en">Bow is a long-range weapon usually, but not exclusively, made of wood that shoots arrows.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Bow</IRI>
+        <IRI>#Bow</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bow</IRI>
+        <Literal xml:lang="en">Bow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Broad_bladed_axe</IRI>
+        <Literal>A broadaxe is a large-(broad) headed axe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Character</IRI>
+        <Literal xml:lang="en">Fictional characters, divided into various races, created by J. R.R. Tolkien.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Character</IRI>
+        <IRI>#Character</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Character</IRI>
+        <Literal xml:lang="en">Character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Character</IRI>
+        <Literal xml:lang="en">http://dbpedia.org/page/Character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dagger_Of_Westernesse</IRI>
+        <Literal>The Daggers of Westernesse were weapons that Tom Bombadil brought out of the mound in which Frodo Baggins and his friends had been imprisoned. Each dagger had a long, leaf-shaped blade, damasked with serpent-forms in red and gold. They had black sheaths of an unknown metal, light and strong, adorned with fiery stones.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dwarf</IRI>
+        <Literal xml:lang="en">One of the races of fictional characters populating Middle Earth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Dwarf</IRI>
+        <IRI>#Dwarf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dwarf</IRI>
+        <Literal xml:lang="en">Dwarf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Dwarf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Dwarf_(Middle-earth)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Elf</IRI>
+        <Literal xml:lang="en">One of the races of fictional characters populating Middle Earth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Elf</IRI>
+        <IRI>#Elf</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Elf</IRI>
+        <Literal xml:lang="en">Elf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Elf</IRI>
+        <Literal xml:lang="en">http://dbpedia.org/page/Elf_(Middle-earth)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Erebor</IRI>
+        <Literal>Erebor was a mountain in the north-east of Rhovanion. It was the source of the river Running, and a major Dwarven stronghold, the Kingdom under the Mountain at the end of the Third Age and well into the Fourth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fallohide</IRI>
+        <Literal xml:lang="en">The least common of Hobbits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Fallohide</IRI>
+        <IRI>#Fallohide</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fallohide</IRI>
+        <Literal xml:lang="en">Fallohide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Glamdring</IRI>
+        <Literal>Glamdring was a sword, said to have belonged to Turgon, but best known as the weapon of Gandalf during the War of the Ring. It was known in Westron as the Foe-hammer, and Orcs knew it as Beater.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Gondor</IRI>
+        <Literal>Gondor was the South Kingdom of the Númenóreans in Middle-earth, established soon after the downfall of Númenor by Isildur and his brother Anárion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Harfoot</IRI>
+        <Literal xml:lang="en">The most common type of Hobbit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Harfoot</IRI>
+        <IRI>#Harfoot</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Harfoot</IRI>
+        <Literal xml:lang="en">Harfoot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hobbit</IRI>
+        <Literal xml:lang="en">One of the races of fictional characters populating Middle Earth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hobbit</IRI>
+        <IRI>#Hobbit</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hobbit</IRI>
+        <Literal xml:lang="en">Hobbit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Hobbit</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/page/Hobbit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Human</IRI>
+        <Literal xml:lang="en">One of the races of fictional characters populating Middle Earth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Human</IRI>
+        <IRI>#Human</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Human</IRI>
+        <Literal xml:lang="en">Human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Human</IRI>
+        <Literal xml:lang="en">http://dbpedia.org/page/Man_(Middle-earth)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Khuzdul</IRI>
+        <Literal>Khuzdul, or Dwarvish, was the secret language of the Dwarves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Language</IRI>
+        <Literal xml:lang="en">Many different languages are spoken by the characters living in Middle-Earth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Language</IRI>
+        <IRI>#Language</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Language</IRI>
+        <Literal xml:lang="en">Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Maiar</IRI>
+        <Literal xml:lang="en">One of the races of fictional characters populating Middle Earth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Maiar</IRI>
+        <IRI>#Maiar</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Maiar</IRI>
+        <Literal xml:lang="en">Maiar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Maiar</IRI>
+        <Literal xml:lang="en">http://dbpedia.org/page/Maia_(Middle-earth)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mordor</IRI>
+        <Literal>Mordor was a land in the south-east of the Westlands east of Gondor. During most of the Second and Third Ages it was ruled by Sauron and it was his dwelling and base from which he attempted to conquer Middle-earth.
+Mordor was surrounded by three enormous mountain ridges from the North, from the West and from the South, protecting it from an unexpected invasion by any of the Free peoples.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Name</IRI>
+        <Literal xml:lang="en">Names, in Tolkien&apos;s universe, are very important. As a matter of fact, the writer carefully thought about the meaning and the etimology of the names he created.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Name</IRI>
+        <IRI>#Name</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Name</IRI>
+        <Literal xml:lang="en">Name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Narya</IRI>
+        <Literal>Narya was one of the Rings of Power, specifically one of the &quot;Three Rings for the Elven Kings under the sky&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Noldor</IRI>
+        <Literal xml:lang="en">Subclass of Elf. Noldor are High Elves of the Second Clan who migrated to Valinor and lived in Eldamar.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Noldor</IRI>
+        <IRI>#Noldor</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Noldor</IRI>
+        <Literal xml:lang="en">Noldor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Place</IRI>
+        <Literal xml:lang="en">In Tolkien&apos;s universe, many places are created and taken into consideration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Place</IRI>
+        <IRI>#Place</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Place</IRI>
+        <Literal xml:lang="en">Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Quenya</IRI>
+        <Literal>Quenya was one of the languages spoken by the Elves. It was the tongue that developed among those non-Telerin Elves who reached Aman (the High Elves) from an earlier language called Common Eldarin.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ring</IRI>
+        <Literal xml:lang="en">In Middle-Earth, rings are artefacts which possess magical powers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Ring</IRI>
+        <IRI>#Ring</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ring</IRI>
+        <Literal xml:lang="en">Ring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sindarin</IRI>
+        <Literal>Sindarin was the Elvish language most commonly spoken in Middle-earth in the Third Age.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Staff</IRI>
+        <Literal>Usually used by the Maiars accompained by a sword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Staff</IRI>
+        <IRI>#Staff</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Staff</IRI>
+        <Literal>Staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sting</IRI>
+        <Literal>Sting was an Elvish knife that was probably made in Gondolin in the First Age. Its maker and original bearer are unknown.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stoor</IRI>
+        <Literal xml:lang="en">A type of Hobbit who lived in swampy areas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Stoor</IRI>
+        <IRI>#Stoor</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stoor</IRI>
+        <Literal xml:lang="en">Stoor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sword</IRI>
+        <Literal xml:lang="en">In Middle-Earth, swords are forged out different materials and they might have secret hidden powers according to the hand that is using them.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sword</IRI>
+        <Literal xml:lang="en">Sword</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Teleri</IRI>
+        <Literal xml:lang="en">Sublcass of Elf. Teleri were the third of the Elf clans who came to Aman.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Teleri</IRI>
+        <IRI>#Teleri</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Teleri</IRI>
+        <Literal xml:lang="en">Teleri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#The_One_Ring</IRI>
+        <Literal>The One Ring was an ancient artefact created by the Dark Lord Sauron in the Second Age for the purpose of ruling over the Free peoples of Middle-earth, mainly the Elves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#The_Shire</IRI>
+        <Literal>The Shire was a region in Eriador inhabited by Hobbits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vanyar</IRI>
+        <Literal xml:lang="en">Subclass of Elf. They are the fairest and most noble of the High Elves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Vanyar</IRI>
+        <IRI>#Vanyar</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Vanyar</IRI>
+        <Literal xml:lang="en">Vanyar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Weapon</IRI>
+        <Literal xml:lang="en">Characters are provided with a weapon which they use to perform actions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Weapon</IRI>
+        <IRI>#Weapon</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Weapon</IRI>
+        <Literal xml:lang="en">Weapon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Westron</IRI>
+        <Literal>The Westron was the language of the Dúnedain of Middle-earth. By the end of the Third Age it was more or less a universal language spoken throughout the Westlands.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wizard_Staff</IRI>
+        <Literal xml:lang="en">A Wizard Staff is the primary tool, power conduit, and sometimes weapon of Wizards, which might have also served as a symbol of their power or rank.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Wizard_Staff</IRI>
+        <IRI>#Wizard_Staff</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Wizard_Staff</IRI>
+        <Literal xml:lang="en">Staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Woodland_Realm</IRI>
+        <Literal>The Woodland Realm was a kingdom of Silvan Elves in Mirkwood, from the Second Age onwards.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

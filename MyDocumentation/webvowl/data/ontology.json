@@ -1,0 +1,1652 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1" ],
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Staff",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Staff",
+      "undefined" : "Staff"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Wizard_Staff",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A Wizard Staff is the primary tool, power conduit, and sometimes weapon of Wizards, which might have also served as a symbol of their power or rank."
+      },
+      "labels" : {
+        "IRI-based" : "Wizard_Staff",
+        "en" : "Staff"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Usually used by the Maiars accompained by a sword"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Elf",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "http://dbpedia.org/page/Elf_(Middle-earth)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Elf",
+      "en" : "Elf"
+    },
+    "subClasses" : [ "3", "13", "14" ],
+    "comment" : {
+      "en" : "One of the races of fictional characters populating Middle Earth."
+    },
+    "id" : "4",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Hobbit",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/page/Hobbit",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Hobbit",
+      "en" : "Hobbit"
+    },
+    "subClasses" : [ "18", "19", "20" ],
+    "comment" : {
+      "en" : "One of the races of fictional characters populating Middle Earth."
+    },
+    "id" : "17",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Teleri",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Teleri",
+      "en" : "Teleri"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Legolas"
+      }
+    } ],
+    "comment" : {
+      "en" : "Sublcass of Elf. Teleri were the third of the Elf clans who came to Aman."
+    },
+    "id" : "14",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Name",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Name",
+      "en" : "Name"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Gimli_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Legolas_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Legolas_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "The_Shire_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Meriadoc_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Aragorn_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Gandalf_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Bilbo_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Baggins_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Baggins_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Sting_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Gondor_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Westron_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Sauron_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Khuzdul_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Frodo_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Took_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Took_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Erebor_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Samwise_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Quenya_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Peregrin_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Mordor_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gamgee_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Gamgee_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Brandybuck_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Brandybuck_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Boromir_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Sindarin_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Narya_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Glamdring_name"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Andúril_name",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Andúril_name"
+      }
+    } ],
+    "comment" : {
+      "en" : "Names, in Tolkien's universe, are very important. As a matter of fact, the writer carefully thought about the meaning and the etimology of the names he created."
+    },
+    "id" : "11"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "16", "22", "6" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Place",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Place",
+      "en" : "Place"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_Shire",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "The Shire was a region in Eriador inhabited by Hobbits."
+      },
+      "labels" : {
+        "IRI-based" : "The_Shire"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Erebor",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "Erebor was a mountain in the north-east of Rhovanion. It was the source of the river Running, and a major Dwarven stronghold, the Kingdom under the Mountain at the end of the Third Age and well into the Fourth."
+      },
+      "labels" : {
+        "IRI-based" : "Erebor"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Mordor",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "Mordor was a land in the south-east of the Westlands east of Gondor. During most of the Second and Third Ages it was ruled by Sauron and it was his dwelling and base from which he attempted to conquer Middle-earth.\nMordor was surrounded by three enormous mountain ridges from the North, from the West and from the South, protecting it from an unexpected invasion by any of the Free peoples."
+      },
+      "labels" : {
+        "IRI-based" : "Mordor"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Woodland_Realm",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "The Woodland Realm was a kingdom of Silvan Elves in Mirkwood, from the Second Age onwards."
+      },
+      "labels" : {
+        "IRI-based" : "Woodland_Realm"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gondor",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "Gondor was the South Kingdom of the Númenóreans in Middle-earth, established soon after the downfall of Númenor by Isildur and his brother Anárion."
+      },
+      "labels" : {
+        "IRI-based" : "Gondor"
+      }
+    } ],
+    "comment" : {
+      "en" : "In Tolkien's universe, many places are created and taken into consideration."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Ring",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Ring",
+      "en" : "Ring"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Narya",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "Narya was one of the Rings of Power, specifically one of the \"Three Rings for the Elven Kings under the sky\"."
+      },
+      "labels" : {
+        "IRI-based" : "Narya"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#The_One_Ring",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "The One Ring was an ancient artefact created by the Dark Lord Sauron in the Second Age for the purpose of ruling over the Free peoples of Middle-earth, mainly the Elves."
+      },
+      "labels" : {
+        "IRI-based" : "The_One_Ring"
+      }
+    } ],
+    "comment" : {
+      "en" : "In Middle-Earth, rings are artefacts which possess magical powers."
+    },
+    "id" : "37",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Weapon",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Weapon",
+      "en" : "Weapon"
+    },
+    "subClasses" : [ "0", "37", "24", "38", "39" ],
+    "comment" : {
+      "en" : "Characters are provided with a weapon which they use to perform actions."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Axe",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Axe",
+      "en" : "Axe"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Broad_bladed_axe",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "A broadaxe is a large-(broad) headed axe."
+      },
+      "labels" : {
+        "IRI-based" : "Broad_bladed_axe"
+      }
+    } ],
+    "comment" : {
+      "en" : "Axe is a kind of weapon favoured by the Dwarves and few Elves."
+    },
+    "id" : "38",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Fallohide",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Fallohide",
+      "en" : "Fallohide"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Peregrin",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Peregrin"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Meriadoc",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Meriadoc"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Frodo",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Frodo"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bilbo",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Bilbo"
+      }
+    } ],
+    "comment" : {
+      "en" : "The least common of Hobbits."
+    },
+    "id" : "18",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Maiar",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "http://dbpedia.org/page/Maia_(Middle-earth)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Maiar",
+      "en" : "Maiar"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gandalf",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Gandalf"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sauron",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Sauron"
+      }
+    } ],
+    "comment" : {
+      "en" : "One of the races of fictional characters populating Middle Earth."
+    },
+    "id" : "53",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Vanyar",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Vanyar",
+      "en" : "Vanyar"
+    },
+    "comment" : {
+      "en" : "Subclass of Elf. They are the fairest and most noble of the High Elves."
+    },
+    "id" : "13",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Stoor",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Stoor",
+      "en" : "Stoor"
+    },
+    "comment" : {
+      "en" : "A type of Hobbit who lived in swampy areas."
+    },
+    "id" : "20",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sword",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "Sword",
+      "en" : "Sword"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Glamdring",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "Glamdring was a sword, said to have belonged to Turgon, but best known as the weapon of Gandalf during the War of the Ring. It was known in Westron as the Foe-hammer, and Orcs knew it as Beater."
+      },
+      "labels" : {
+        "IRI-based" : "Glamdring"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Andúril",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "Andúril was the name for the sword Narsil after its reforging in Third Age 3018 for Aragorn, the heir of Isildur."
+      },
+      "labels" : {
+        "IRI-based" : "Andúril"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dagger_Of_Westernesse",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "The Daggers of Westernesse were weapons that Tom Bombadil brought out of the mound in which Frodo Baggins and his friends had been imprisoned. Each dagger had a long, leaf-shaped blade, damasked with serpent-forms in red and gold. They had black sheaths of an unknown metal, light and strong, adorned with fiery stones."
+      },
+      "labels" : {
+        "IRI-based" : "Dagger_Of_Westernesse"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sting",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "Sting was an Elvish knife that was probably made in Gondolin in the First Age. Its maker and original bearer are unknown."
+      },
+      "labels" : {
+        "IRI-based" : "Sting"
+      }
+    } ],
+    "comment" : {
+      "en" : "In Middle-Earth, swords are forged out different materials and they might have secret hidden powers according to the hand that is using them."
+    },
+    "id" : "24",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Noldor",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Noldor",
+      "en" : "Noldor"
+    },
+    "comment" : {
+      "en" : "Subclass of Elf. Noldor are High Elves of the Second Clan who migrated to Valinor and lived in Eldamar."
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Dwarf",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/page/Dwarf_(Middle-earth)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Dwarf",
+      "en" : "Dwarf"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Gimli",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Gimli"
+      }
+    } ],
+    "comment" : {
+      "en" : "One of the races of fictional characters populating Middle Earth."
+    },
+    "id" : "69",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Character",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "http://dbpedia.org/page/Character",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Character",
+      "en" : "Character"
+    },
+    "subClasses" : [ "53", "4", "69", "17", "73" ],
+    "comment" : {
+      "en" : "Fictional characters, divided into various races, created by J. R.R. Tolkien."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Human",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "http://dbpedia.org/page/Man_(Middle-earth)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Human",
+      "en" : "Human"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Aragorn",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Aragorn"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Boromir",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Boromir"
+      }
+    } ],
+    "comment" : {
+      "en" : "One of the races of fictional characters populating Middle Earth."
+    },
+    "id" : "73",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Language",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Language",
+      "en" : "Language"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Khuzdul",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "Khuzdul, or Dwarvish, was the secret language of the Dwarves."
+      },
+      "labels" : {
+        "IRI-based" : "Khuzdul"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Black_Speech",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "The Black Speech was created by Sauron during the Dark Years to be the sole language of all the servants of Mordor, replacing the many different varieties of Orkish and other languages used by his servants."
+      },
+      "labels" : {
+        "IRI-based" : "Black_Speech"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Sindarin",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "Sindarin was the Elvish language most commonly spoken in Middle-earth in the Third Age."
+      },
+      "labels" : {
+        "IRI-based" : "Sindarin"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Westron",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "The Westron was the language of the Dúnedain of Middle-earth. By the end of the Third Age it was more or less a universal language spoken throughout the Westlands."
+      },
+      "labels" : {
+        "IRI-based" : "Westron"
+      }
+    }, {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Quenya",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "comment" : {
+        "undefined" : "Quenya was one of the languages spoken by the Elves. It was the tongue that developed among those non-Telerin Elves who reached Aman (the High Elves) from an earlier language called Common Eldarin."
+      },
+      "labels" : {
+        "IRI-based" : "Quenya"
+      }
+    } ],
+    "comment" : {
+      "en" : "Many different languages are spoken by the characters living in Middle-Earth."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Harfoot",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Harfoot",
+      "en" : "Harfoot"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Samwise",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Samwise"
+      }
+    } ],
+    "comment" : {
+      "en" : "The most common type of Hobbit."
+    },
+    "id" : "19",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Bow",
+      "en" : "Bow"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#Bow_of_Lórien",
+      "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+      "labels" : {
+        "IRI-based" : "Bow_of_Lórien"
+      }
+    } ],
+    "comment" : {
+      "en" : "Bow is a long-range weapon usually, but not exclusively, made of wood that shoots arrows."
+    },
+    "id" : "39",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#nephewOf",
+    "inverse" : "7",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "nephewOf"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfBirth",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "core:dateOfBirth"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasEtimology",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasEtimology"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenBy",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "spokenBy"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "domain" : "24",
+    "range" : "24",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "28",
+      "undefined" : "is a"
+    }
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#friendOf",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "friendOf"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#isWrittenAs",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isWrittenAs"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#core:dateOfDeath",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "core:dateOfDeath"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#means",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "means"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#speaks",
+    "inverse" : "15",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "speaks"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#cousinOf",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "cousinOf"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "22",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "1",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adoptedBy",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "adoptedBy"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "range" : "11",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "22",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "16",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "22",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "21",
+    "attributes" : [ "external", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "11",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#sameAs",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "sameAs"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "52"
+  }, {
+    "range" : "0",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "24",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "37",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "0",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "24",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "0",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "24",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://purl.org/dc/terms/Location",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "Location"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "24",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#spokenIn",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "spokenIn"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "range" : "39",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "37",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#inhabitant",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "inhabitant"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#enemyOf",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "enemyOf"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "range" : "6",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/member",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "member"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "70"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "6",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "6",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/family_name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "family_name"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#hasWeapon",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasWeapon"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "range" : "6",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "1",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#uncleOf",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "uncleOf"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology#adopt",
+    "inverse" : "43",
+    "baseIri" : "https://github.com/Lotro/lotro.github.io/blob/master/LOTROntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "adopt"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "range" : "1",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "17",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "1",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "1",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "4",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/age",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "age"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "86"
+  }, {
+    "range" : "4",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "17",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "17",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  } ]
+}
